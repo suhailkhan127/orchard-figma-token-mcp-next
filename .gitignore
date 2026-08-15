@@ -1,0 +1,28 @@
+# secrets
+.env
+.env.local
+.env*.local
+
+# node / next
+node_modules/
+.next/
+out/
+dist/
+npm-debug.log*
+
+# figma throwaway dev harnesses (keep _Screenshots + ARTBOARDS.md + BUILD-ORDER.md)
+_HTML/_compare.html
+_HTML/_responsive.html
+_HTML/_pages.json
+_HTML/_ref-*.jpg
+
+# large regenerable Figma API dumps
+hp.json
+rev06.json
+scripts/inner-images.json
+iconurls.json
+
+# os
+.DS_Store
+Thumbs.db
+desktop.ini

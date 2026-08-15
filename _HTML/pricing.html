@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orthodontic Treatment Pricing & Finance | Orchard Orthodontics</title>
+<meta name="description" content="Transparent orthodontic pricing in London. Invisalign from £4,500, Damon and fixed braces from £4,200, with interest-free finance and flexible monthly payment plans.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ===== Pricing page-specific (namespaced) ===== */
+.page-pricing .ph--dark{background:linear-gradient(135deg,#24384a,#101c26)}
+
+/* intro + feature columns */
+.page-pricing .price-intro{max-width:760px}
+.page-pricing .price-intro h2{margin-bottom:18px}
+.page-pricing .pfeats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;margin-top:56px}
+.page-pricing .pfeat__ico{height:52px;width:auto;margin-bottom:16px;display:inline-block}
+.page-pricing .pfeat h4{font-size:19px;margin-bottom:10px}
+.page-pricing .pfeat p{font-size:15px;color:var(--c02);margin:0}
+
+/* pricing table */
+.page-pricing .ptable-wrap{margin-top:64px;overflow-x:auto}
+.page-pricing .ptable{width:100%;border-collapse:collapse;min-width:720px}
+.page-pricing .ptable th,.page-pricing .ptable td{text-align:left;padding:22px 24px;font-size:16px}
+.page-pricing .ptable thead th{color:var(--c02);font-weight:600;font-size:15px;border-bottom:1px solid var(--hairline)}
+.page-pricing .ptable thead th:first-child{width:34%}
+.page-pricing .ptable tbody tr:nth-child(odd){background:#f4f7f8;border-radius:16px}
+.page-pricing .ptable tbody tr td:first-child{border-radius:16px 0 0 16px}
+.page-pricing .ptable tbody tr td:last-child{border-radius:0 16px 16px 0}
+.page-pricing .ptable .treat-name{font-weight:600;color:var(--c01)}
+.page-pricing .ptable .treat-name small{display:block;font-weight:400;font-size:13px;color:var(--c02);margin-top:3px}
+.page-pricing .ptable .total{font-weight:600;color:var(--c01)}
+.page-pricing .price-note{margin-top:44px;max-width:780px}
+.page-pricing .price-note h5{font-size:18px;margin-bottom:12px}
+.page-pricing .price-note p{font-size:15px;color:var(--c02);margin-bottom:12px}
+.page-pricing .price-note .disc{font-size:13px;color:var(--c02)}
+
+/* budget calculator */
+.page-pricing .calc{background:#f4f7f8}
+.page-pricing .calc__grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:start}
+.page-pricing .calc__panel{background:#fff;border:1px solid var(--hairline);border-radius:var(--radius-card);padding:32px}
+.page-pricing .calc h2{margin-bottom:32px}
+.page-pricing .calc__label{display:block;font-size:14px;font-weight:600;color:var(--c02);margin:22px 0 10px}
+.page-pricing .calc__label:first-child{margin-top:0}
+.page-pricing .seg{display:inline-flex;background:#eef2f4;border-radius:32px;padding:4px}
+.page-pricing .seg button{border:0;background:transparent;font:inherit;font-size:14px;font-weight:600;color:var(--c02);padding:9px 22px;border-radius:28px;cursor:pointer}
+.page-pricing .seg button[aria-pressed="true"]{background:var(--c01);color:#fff}
+.page-pricing .calc__field{display:flex;align-items:center;gap:10px;border:1px solid var(--hairline);border-radius:12px;padding:12px 14px;font-size:15px;color:var(--c01)}
+.page-pricing .calc__field .unit{color:var(--c02)}
+.page-pricing .calc__field input,.page-pricing .calc__field select{border:0;flex:1;font:inherit;font-size:15px;color:var(--c01);background:transparent;outline:none}
+.page-pricing .calc__field input[type="range"]{accent-color:var(--c03)}
+.page-pricing .calc__row{display:grid;grid-template-columns:150px 1fr;gap:16px;align-items:center}
+
+/* option cards */
+.page-pricing .calc__tabs{display:flex;gap:6px;background:#eef2f4;border-radius:14px;padding:5px;margin-bottom:20px}
+.page-pricing .calc__tabs button{flex:1;border:0;background:transparent;font:inherit;font-size:13px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;color:var(--c02);padding:11px;border-radius:10px;cursor:pointer}
+.page-pricing .calc__tabs button[aria-selected="true"]{background:#fff;color:var(--c01);box-shadow:0 4px 14px rgba(37,67,92,.08)}
+.page-pricing .opts{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.page-pricing .opt{background:var(--c01);color:#fff;border-radius:16px;padding:22px}
+.page-pricing .opt--wide{grid-column:1 / -1}
+.page-pricing .opt--alt{background:var(--c02)}
+.page-pricing .opt__k{font-size:12px;font-weight:600;letter-spacing:.5px;text-transform:uppercase;color:var(--c04)}
+.page-pricing .opt__desc{font-size:13px;color:rgba(255,255,255,.82);margin:6px 0 16px;line-height:1.4}
+.page-pricing .opt__price{font-size:40px;font-weight:600;line-height:1;margin-bottom:14px}
+.page-pricing .opt__cta{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;letter-spacing:.4px;text-transform:uppercase;color:var(--c04)}
+.page-pricing .opt__foot{font-size:12px;color:rgba(255,255,255,.7);margin-top:14px;line-height:1.5}
+
+/* FAQ heading */
+.page-pricing .faqwrap{max-width:860px;margin-inline:auto}
+
+@media (max-width:1024px){
+  .page-pricing .pfeats{grid-template-columns:repeat(2,1fr);gap:28px}
+  .page-pricing .calc__grid{grid-template-columns:1fr;gap:32px}
+}
+@media (max-width:640px){
+  .page-pricing .pfeats{grid-template-columns:1fr}
+  .page-pricing .opts{grid-template-columns:1fr}
+  .page-pricing .calc__row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body class="page-pricing">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header is-solid">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Orchard Orthodontics home"><img src="images/logo.svg" alt="Orchard Orthodontics"></a>
+    <div class="navbar__right">
+      <div class="navbar__utility">
+        <div class="langmenu">
+          <button class="langmenu__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+            Language <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="langmenu__panel">
+            <a href="#">🇪🇸 Spanish</a><a href="#">🇵🇹 Portuguese</a><a href="#">🇸🇦 Arabic (Saudi Arabia)</a><a href="#">🇨🇳 Chinese (Mandarin)</a>
+          </div>
+        </div>
+        <a href="dentist-referral.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.2"/><path d="M15.5 14.3c2.4.6 4.5 2.7 4.5 5.7"/></svg> Dentist Referrals</a>
+        <a href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg> Patient Info</a>
+        <a class="topbar__phone" href="tel:02086497500"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg> 020 8649 7500</a>
+      </div>
+      <div class="navbar__bottom">
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">Treatments <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link active" href="pricing.html">Pricing</a></div>
+          <div class="nav__item"><a class="nav__link" href="smile-gallery.html">Smile Gallery</a></div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">For Patients <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div>
+          </div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">About Us <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></div>
+        </nav>
+        <a class="btn btn--green btn--sm header__cta" href="booking.html">Free Consultation</a>
+      </div>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">Treatments <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="pricing.html">Pricing</a></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="smile-gallery.html">Smile Gallery</a></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">For Patients <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">About Us <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="contact.html">Contact Us</a></div>
+  <div class="mobile-menu__cta"><a class="btn btn--green" href="booking.html">Free Consultation</a></div>
+</div>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="inset-hero">
+    <div class="inset-hero__bg"><img src="images/home/why-bg.png" alt="" loading="lazy"></div>
+    <div class="container">
+      <div class="inset-hero__grid">
+        <div>
+          <div class="crumb"><a href="index.html">Home</a> / Pricing</div>
+          <h1>Pricing</h1>
+          <p>Each smile is unique and all our treatment plans are customised to your needs. The cost of braces or your Invisalign® treatment may therefore vary slightly from the guide prices below. Rest assured that when you receive your custom quote at your free consultation, the cost of your orthodontic treatment is all-inclusive.</p>
+          <a class="btn btn--green" href="booking.html">Book a Free Consultation</a>
+        </div>
+        <div class="inset-hero__media">
+          <!-- IMG: smiling orthodontic patient portrait 4:3 -->
+          <img src="images/inner/pricing/pricing-05.png" alt="Smiling Orchard Orthodontics patient" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTRO + FEATURE COLUMNS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="price-intro">
+        <span class="eyebrow">Transparent pricing</span>
+        <h2>Straightforward pricing, <strong>no hidden surprises</strong></h2>
+        <p>Every treatment we provide is fully inclusive — from your specialist consultation and diagnostics through to your retainers and aftercare. Below you will find our guide prices, together with the flexible ways you can spread the cost of a healthier, straighter smile.</p>
+      </div>
+      <div class="pfeats">
+        <div class="pfeat reveal">
+          <img class="pfeat__ico" src="images/icons/price-check.svg" alt="">
+          <h4>All-inclusive quotes</h4>
+          <p>One clear price covers your appointments, diagnostics, appliances, retainers and reviews.</p>
+        </div>
+        <div class="pfeat reveal" data-delay="1">
+          <img class="pfeat__ico" src="images/icons/price-cal.svg" alt="">
+          <h4>Flexible monthly plans</h4>
+          <p>Spread the cost of treatment over 6 to 24 months to suit your budget.</p>
+        </div>
+        <div class="pfeat reveal" data-delay="2">
+          <img class="pfeat__ico" src="images/icons/price-zero.svg" alt="">
+          <h4>0% interest-free finance</h4>
+          <p>Interest-free payment options are available on the majority of our treatments.</p>
+        </div>
+        <div class="pfeat reveal" data-delay="3">
+          <img class="pfeat__ico" src="images/icons/why-wallet.svg" alt="">
+          <h4>Low deposit to start</h4>
+          <p>Begin treatment with a small deposit and pay the balance in manageable steps.</p>
+        </div>
+      </div>
+
+      <!-- ===================== PRICE TABLE ===================== -->
+      <div class="ptable-wrap">
+        <table class="ptable">
+          <thead>
+            <tr>
+              <th>Treatment</th>
+              <th>Total (£)</th>
+              <th>Per Month (£)</th>
+              <th>Per Week (£)</th>
+              <th>Per Day (£)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="treat-name">Invisalign®<small>Almost invisible clear aligners</small></td>
+              <td class="total">From £4,500</td>
+              <td>£170.84</td>
+              <td>£39.43</td>
+              <td>£5.62</td>
+            </tr>
+            <tr>
+              <td class="treat-name">Damon Braces<small>Discreet self-ligating fixed braces</small></td>
+              <td class="total">From £4,200</td>
+              <td>£141.67</td>
+              <td>£32.69</td>
+              <td>£4.66</td>
+            </tr>
+            <tr>
+              <td class="treat-name">Fixed Metal Braces<small>Traditional dependable braces</small></td>
+              <td class="total">From £4,200</td>
+              <td>£141.67</td>
+              <td>£32.69</td>
+              <td>£4.66</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="price-note">
+        <h5>Monthly Payment Plans</h5>
+        <p>These are starting costs. The final cost of your orthodontic treatment will depend on the type of appliance you are fitted with and the complexity of your treatment. Some cases are more straightforward than others, while some require a significant amount of work. Our payment plans can be spread over 24 months — the examples above show what you could expect to pay once your deposit has been paid.</p>
+        <p class="disc">**Payment plans are subject to terms and conditions. Please also note that an initial deposit may be required.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUDGET CALCULATOR ===================== -->
+  <section class="section calc">
+    <div class="container calc__grid">
+      <div>
+        <h2>Orthodontic<br><strong>Budget Calculator Guide</strong></h2>
+
+        <span class="calc__label">Payment Frequency</span>
+        <div class="seg" role="group" aria-label="Payment frequency">
+          <button type="button" aria-pressed="true">Monthly</button>
+          <button type="button" aria-pressed="false">Weekly</button>
+        </div>
+
+        <span class="calc__label">Cost of treatment</span>
+        <div class="calc__field"><span class="unit">£</span><input type="text" value="6,000" aria-label="Cost of treatment"></div>
+
+        <span class="calc__label">Deposit</span>
+        <div class="calc__field"><span class="unit">£</span><input type="text" value="1,500" aria-label="Deposit"></div>
+
+        <span class="calc__label">Repayment Timeframe (Monthly)</span>
+        <div class="calc__row">
+          <div class="calc__field">
+            <select aria-label="Repayment timeframe">
+              <option>6 Months</option>
+              <option selected>12 Months</option>
+              <option>18 Months</option>
+              <option>24 Months</option>
+            </select>
+          </div>
+          <input type="range" min="6" max="24" value="12" aria-label="Repayment timeframe slider">
+        </div>
+      </div>
+
+      <div class="calc__panel">
+        <div class="calc__tabs" role="tablist" aria-label="Estimate view">
+          <button type="button" role="tab" aria-selected="true">Payment Options</button>
+          <button type="button" role="tab" aria-selected="false">Installments</button>
+          <button type="button" role="tab" aria-selected="false">Graph</button>
+        </div>
+        <div class="opts">
+          <div class="opt">
+            <div class="opt__k">Option 01</div>
+            <p class="opt__desc">Pay in full with 2.5% discount</p>
+            <div class="opt__price">£1,970</div>
+            <a class="opt__cta" href="booking.html">Enquire Today →</a>
+          </div>
+          <div class="opt opt--alt">
+            <div class="opt__k">Option 02</div>
+            <p class="opt__desc">Pay in two instalments with 1.5% discount</p>
+            <div class="opt__price">£1,950</div>
+            <a class="opt__cta" href="booking.html">Enquire Today →</a>
+          </div>
+          <div class="opt opt--wide">
+            <div class="opt__k">Option 03</div>
+            <p class="opt__desc">Monthly instalments — through Denticare</p>
+            <div class="opt__price">£250</div>
+            <a class="opt__cta" href="booking.html">Enquire Today →</a>
+            <p class="opt__foot">Initial deposit, then weekly or monthly payments paid through our estimated treatment time. For this option we use a third-party provider, Denticare, to manage these instalments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="section">
+    <div class="container faqwrap">
+      <div class="sechead">
+        <span class="eyebrow">Good to know</span>
+        <h2>Pricing &amp; finance <strong>questions</strong></h2>
+      </div>
+      <div class="faq">
+        <div class="faq__item is-open">
+          <button class="faq__q" aria-expanded="true">Is the price I am quoted all-inclusive? <span class="plus"></span></button>
+          <div class="faq__a" style="max-height:200px"><div>Yes. Your quote covers your specialist consultation, records and diagnostics, all appointments, your appliances, retainers at the end of treatment and your review appointments. There are no hidden extras.</div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Do you offer interest-free finance? <span class="plus"></span></button>
+          <div class="faq__a"><div>We offer 0% interest-free payment plans on the majority of our treatments, spread over 6 to 24 months. Longer-term finance is also available through our partner Denticare.</div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">How much deposit do I need to get started? <span class="plus"></span></button>
+          <div class="faq__a"><div>Most plans begin with a small deposit, with the remaining balance divided into manageable weekly or monthly payments. Your exact deposit will be confirmed at your free consultation.</div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Is orthodontic treatment available on the NHS? <span class="plus"></span></button>
+          <div class="faq__a"><div>NHS orthodontic treatment is available for eligible patients, usually those under 18 with a clinical need. Our team will happily talk you through your options and eligibility at your appointment.</div></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">Why might my final price differ from the guide prices? <span class="plus"></span></button>
+          <div class="faq__a"><div>Every smile is different. The final cost depends on the appliance you choose and the complexity of your case. You will receive a fixed, all-inclusive quote before any treatment begins.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__card reveal">
+        <div class="cta__media">
+          <!-- IMG: happy patient on phone 1:1 -->
+          <img src="images/inner/pricing/pricing-03.png" alt="Smiling patient checking her phone outside an Orchard Orthodontics practice" loading="lazy">
+        </div>
+        <div class="cta__body">
+          <span class="eyebrow">Book a Free Consultation</span>
+          <h2>Ready to start your<br><strong>smile journey?</strong></h2>
+          <p>Book a free consultation at your nearest Orchard Orthodontics practice. Our specialist team will build a clear, all-inclusive plan and talk you through the finance option that suits you best.</p>
+          <a class="btn btn--green" href="booking.html">Book a Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== VISIT US ===================== -->
+<section class="visit">
+  <div class="visit__bg"><img src="images/home/visit-bg.png" alt="" loading="lazy"></div>
+  <div class="container visit__grid">
+    <div class="reveal reveal--left">
+      <span class="eyebrow">Find us</span>
+      <h2>Visit Us</h2>
+      <p class="visit__sub">Three specialist practices across South London and Surrey. Choose your nearest location for directions, opening hours and contact details.</p>
+      <div class="locpick">
+        <button class="locpick__btn is-active" data-loc="croydon">Croydon</button>
+        <button class="locpick__btn" data-loc="brixton">Brixton</button>
+        <button class="locpick__btn" data-loc="guildford">Guildford</button>
+      </div>
+      <div data-loc-panel="croydon">
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>114-118 Cherry Orchard Road, Croydon<br>Greater London, CR0 6BA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:croydon@orchardortho.com">croydon@orchardortho.com</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="visit__hours"><span>Monday</span><span>9:00am – 5:00pm</span><span>Tuesday – Wednesday</span><span>9:00am – 6:00pm</span><span>Thursday</span><span>9:00am – 7:00pm</span><span>Friday</span><span>9:00am – 5:00pm</span><span>Saturday &amp; Sunday</span><span>Closed</span></div>
+        </div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="brixton" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 Brixton Hill, Brixton<br>London, SW2 1EG</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="guildford" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dental &amp; Implant Centre, 6 Faraday Road<br>Guildford, GU1 1EA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="reveal reveal--right visit__map">
+      <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
+      <img class="visit__pin" src="images/map-pin.svg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo" href="index.html"><img src="images/tio-logo.svg" alt="tio"></a>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><img src="images/social/ig.svg" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="images/social/youtube.svg" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="images/social/facebook.svg" alt=""></a>
+        <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__meta">© Copyright 2025 <span>|</span> Orchard Orthodontics <span>|</span> All Rights Reserved</div>
+      <div class="footer__legal"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms &amp; Conditions</a><span>|</span><a href="#">Cookies Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="grev" href="#" aria-label="Google reviews 4.8 stars">
+  <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 01-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.7-2.4l-3.4-2.6c-.9.6-2 1-3.3 1-2.6 0-4.7-1.7-5.5-4.1H3v2.6A10 10 0 0012 22z"/><path fill="#FBBC05" d="M6.5 13.9a6 6 0 010-3.8V7.5H3a10 10 0 000 9z"/><path fill="#EA4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 003 7.5l3.5 2.6C7.3 7.8 9.4 6.1 12 6.1z"/></svg>
+  <span><b>4.8</b> <span class="grev__stars">★★★★★</span><br>1,437 Google Reviews</span>
+</a>
+<a class="wa" href="#" aria-label="Chat on WhatsApp"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.2-1.4A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script src="main.js" defer></script>
+</body>
+</html>

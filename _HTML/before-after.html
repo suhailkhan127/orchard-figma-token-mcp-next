@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before &amp; After Smile Transformations | Orchard Orthodontics</title>
+<meta name="description" content="See real before-and-after results from Orchard Orthodontics patients across Croydon, Brixton and Guildford — Invisalign, Damon braces, porcelain veneers and cosmetic bonding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ===== Before & After page-specific styles ===== */
+.page-before-after .ph--dark{background:linear-gradient(135deg,#24384a,#101c26)}
+
+/* filter pills */
+.page-before-after .ba-filter{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-bottom:48px}
+.page-before-after .ba-pill{border:1.5px solid var(--hairline);background:#fff;color:var(--c01);border-radius:32px;padding:10px 26px;font:inherit;font-size:14px;font-weight:500;letter-spacing:.3px;cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.page-before-after .ba-pill:hover{border-color:var(--c01)}
+.page-before-after .ba-pill.is-active{background:var(--c01);border-color:var(--c01);color:#fff}
+
+/* case grid */
+.page-before-after .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:36px 24px}
+.page-before-after .ba-case.is-hidden{display:none}
+
+/* before/after split card (landscape) */
+.page-before-after .ba{aspect-ratio:3/2;margin-bottom:14px}
+.page-before-after .ba .ph{position:absolute;inset:0;width:100%;height:100%}
+.page-before-after .ba .ba__before{clip-path:inset(0 50% 0 0)}
+.page-before-after .ba__tag{top:auto;bottom:14px;background:rgba(37,67,92,.82);font-weight:500}
+.page-before-after .ba__divider{position:absolute;top:0;left:50%;width:2px;height:100%;background:rgba(255,255,255,.9);transform:translateX(-50%);z-index:3}
+.page-before-after .ba__handle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);display:flex;align-items:center;justify-content:center;width:46px;height:46px;border-radius:50%;background:var(--c01);border:2px solid #fff;color:#fff;box-shadow:0 4px 14px rgba(0,0,0,.25);z-index:4}
+.page-before-after .ba__handle svg{width:20px;height:20px}
+.page-before-after .ba-case__caption{font-size:15px;font-weight:500;color:var(--ct)}
+
+@media (max-width:1024px){.page-before-after .ba-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:640px){.page-before-after .ba-grid{grid-template-columns:1fr}}
+
+/* wired image placeholders */
+.page-before-after .ph{overflow:hidden;position:relative}
+.page-before-after .ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.page-before-after .ph>.playbtn,.page-before-after .ph>.playbtn__label,.page-before-after .ph>.ba__tag{z-index:2}
+</style>
+</head>
+<body class="page-before-after">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header is-solid">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Orchard Orthodontics home"><img src="images/logo.svg" alt="Orchard Orthodontics"></a>
+    <div class="navbar__right">
+      <div class="navbar__utility">
+        <div class="langmenu">
+          <button class="langmenu__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+            Language <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="langmenu__panel">
+            <a href="#">🇪🇸 Spanish</a><a href="#">🇵🇹 Portuguese</a><a href="#">🇸🇦 Arabic (Saudi Arabia)</a><a href="#">🇨🇳 Chinese (Mandarin)</a>
+          </div>
+        </div>
+        <a href="dentist-referral.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.2"/><path d="M15.5 14.3c2.4.6 4.5 2.7 4.5 5.7"/></svg> Dentist Referrals</a>
+        <a href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg> Patient Info</a>
+        <a class="topbar__phone" href="tel:02086497500"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg> 020 8649 7500</a>
+      </div>
+      <div class="navbar__bottom">
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">Treatments <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+          <div class="nav__item"><a class="nav__link" href="smile-gallery.html">Smile Gallery</a></div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">For Patients <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div>
+          </div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">About Us <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></div>
+        </nav>
+        <a class="btn btn--green btn--sm header__cta" href="booking.html">Free Consultation</a>
+      </div>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">Treatments <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="pricing.html">Pricing</a></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="smile-gallery.html">Smile Gallery</a></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">For Patients <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">About Us <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="contact.html">Contact Us</a></div>
+  <div class="mobile-menu__cta"><a class="btn btn--green" href="booking.html">Free Consultation</a></div>
+</div>
+
+<main id="main">
+
+  <!-- ===================== INSET HERO ===================== -->
+  <section class="inset-hero is-center">
+    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="images/inner/before-after/before-after-21.png" alt="" loading="lazy"></div><!-- IMG: soft smiling patient portrait, faded 16:6 --></div>
+    <div class="container">
+      <div class="inset-hero__grid">
+        <div>
+          <div class="crumb"><a href="index.html">Home</a> / Before &amp; After</div>
+          <h1>Before &amp; After</h1>
+          <p>Explore real smile transformations from patients treated across our Croydon, Brixton and Guildford practices. Drag through each case to see the difference our specialist orthodontists and cosmetic dentists make — from Invisalign and Damon braces to porcelain veneers and bonding.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BEFORE / AFTER GALLERY ===================== -->
+  <section class="section">
+    <div class="container">
+
+      <div class="ba-filter" role="tablist" aria-label="Filter transformations by treatment">
+        <button class="ba-pill is-active" data-filter="all">All</button>
+        <button class="ba-pill" data-filter="invisalign">Invisalign</button>
+        <button class="ba-pill" data-filter="damon">Damon Braces</button>
+        <button class="ba-pill" data-filter="veneers">Porcelain Veneers</button>
+        <button class="ba-pill" data-filter="bonding">Cosmetic Bonding</button>
+      </div>
+
+      <div class="ba-grid">
+
+        <!-- Row 1 -->
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-03.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-04.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="veneers">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-05.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-06.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Porcelain Veneers</figcaption>
+        </figure>
+
+        <!-- Row 2 -->
+        <figure class="ba-case reveal" data-cat="invisalign">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-07.png" alt="Patient's smile before Invisalign treatment" loading="lazy"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-08.png" alt="Patient's smile after Invisalign treatment" loading="lazy"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Invisalign</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-09.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-10.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="veneers">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-11.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-12.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Porcelain Veneers</figcaption>
+        </figure>
+
+        <!-- Row 3 -->
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-13.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-14.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="damon">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-15.png" alt="Patient's smile before Damon braces" loading="lazy"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-16.png" alt="Patient's smile after Damon braces" loading="lazy"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Damon Braces</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="veneers">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-17.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-18.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Porcelain Veneers</figcaption>
+        </figure>
+
+        <!-- Row 4 -->
+        <figure class="ba-case reveal" data-cat="invisalign">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-19.png" alt="Patient's smile before Invisalign treatment" loading="lazy"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-20.png" alt="Patient's smile after Invisalign treatment" loading="lazy"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Invisalign</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="veneers">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-03.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-04.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Porcelain Veneers</figcaption>
+        </figure>
+
+        <!-- Row 5 -->
+        <figure class="ba-case reveal" data-cat="bonding">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-05.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-06.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Cosmetic Bonding</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="damon">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-07.png" alt="Patient's smile before Damon braces" loading="lazy"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-08.png" alt="Patient's smile after Damon braces" loading="lazy"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Damon Braces</figcaption>
+        </figure>
+
+        <figure class="ba-case reveal" data-cat="veneers">
+          <div class="ba">
+            <div class="ph ph--dark ba__before"><img src="images/inner/before-after/before-after-09.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="images/inner/before-after/before-after-10.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <span class="ba__divider"></span>
+            <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
+            <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
+          </div>
+          <figcaption class="ba-case__caption">Porcelain Veneers</figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__card reveal">
+        <div class="cta__media"><div class="ph"><img src="images/inner/before-after/before-after-22.png" alt="Happy patient checking her phone on a London street" loading="lazy"></div><!-- IMG: happy patient checking phone outdoors in London 4:5 --></div>
+        <div class="cta__body">
+          <span class="eyebrow">Book a Free Consultation</span>
+          <h2>See the smile that's<br><strong>waiting for you</strong></h2>
+          <p>Every transformation here started with a single, no-obligation consultation. Book yours at your nearest Orchard Orthodontics practice and our specialist team will map out the right treatment for your smile.</p>
+          <a class="btn btn--green" href="booking.html">Book a Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== VISIT US ===================== -->
+<section class="visit">
+  <div class="visit__bg"><img src="images/home/visit-bg.png" alt="" loading="lazy"></div>
+  <div class="container visit__grid">
+    <div class="reveal reveal--left">
+      <span class="eyebrow">Find us</span>
+      <h2>Visit Us</h2>
+      <p class="visit__sub">Three specialist practices across South London and Surrey. Choose your nearest location for directions, opening hours and contact details.</p>
+      <div class="locpick">
+        <button class="locpick__btn is-active" data-loc="croydon">Croydon</button>
+        <button class="locpick__btn" data-loc="brixton">Brixton</button>
+        <button class="locpick__btn" data-loc="guildford">Guildford</button>
+      </div>
+      <div data-loc-panel="croydon">
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>114-118 Cherry Orchard Road, Croydon<br>Greater London, CR0 6BA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:croydon@orchardortho.com">croydon@orchardortho.com</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="visit__hours"><span>Monday</span><span>9:00am – 5:00pm</span><span>Tuesday – Wednesday</span><span>9:00am – 6:00pm</span><span>Thursday</span><span>9:00am – 7:00pm</span><span>Friday</span><span>9:00am – 5:00pm</span><span>Saturday &amp; Sunday</span><span>Closed</span></div>
+        </div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="brixton" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 Brixton Hill, Brixton<br>London, SW2 1EG</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="guildford" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dental &amp; Implant Centre, 6 Faraday Road<br>Guildford, GU1 1EA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="reveal reveal--right visit__map">
+      <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
+      <img class="visit__pin" src="images/map-pin.svg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo" href="index.html"><img src="images/tio-logo.svg" alt="tio"></a>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><img src="images/social/ig.svg" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="images/social/youtube.svg" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="images/social/facebook.svg" alt=""></a>
+        <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__meta">© Copyright 2025 <span>|</span> Orchard Orthodontics <span>|</span> All Rights Reserved</div>
+      <div class="footer__legal"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms &amp; Conditions</a><span>|</span><a href="#">Cookies Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="grev" href="#" aria-label="Google reviews 4.8 stars">
+  <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 01-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.7-2.4l-3.4-2.6c-.9.6-2 1-3.3 1-2.6 0-4.7-1.7-5.5-4.1H3v2.6A10 10 0 0012 22z"/><path fill="#FBBC05" d="M6.5 13.9a6 6 0 010-3.8V7.5H3a10 10 0 000 9z"/><path fill="#EA4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 003 7.5l3.5 2.6C7.3 7.8 9.4 6.1 12 6.1z"/></svg>
+  <span><b>4.8</b> <span class="grev__stars">★★★★★</span><br>1,437 Google Reviews</span>
+</a>
+<a class="wa" href="#" aria-label="Chat on WhatsApp"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.2-1.4A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script>
+/* Before & After — treatment filter pills */
+(function(){
+  var pills = document.querySelectorAll('.ba-pill');
+  var cases = document.querySelectorAll('.ba-case');
+  pills.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      pills.forEach(function(p){ p.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      var f = btn.getAttribute('data-filter');
+      cases.forEach(function(c){
+        var show = (f === 'all' || c.getAttribute('data-cat') === f);
+        c.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+})();
+</script>
+<script src="main.js" defer></script>
+</body>
+</html>

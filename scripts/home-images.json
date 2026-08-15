@@ -1,0 +1,22 @@
+[
+  { "name": "hero-bg",         "id": "1899:26",  "scale": 1 },
+  { "name": "pros-patients",   "id": "1899:120", "scale": 1 },
+  { "name": "awards",          "id": "1906:359", "scale": 1 },
+  { "name": "award-badge",     "id": "1906:355", "scale": 2 },
+  { "name": "vtest-1",         "id": "1899:375", "scale": 2 },
+  { "name": "vtest-2",         "id": "1899:376", "scale": 2 },
+  { "name": "vtest-3",         "id": "1899:377", "scale": 2 },
+  { "name": "vtest-4",         "id": "1899:378", "scale": 2 },
+  { "name": "treat-patient",   "id": "1899:325", "scale": 2 },
+  { "name": "why-bg",          "id": "1899:46",  "scale": 1 },
+  { "name": "pricing-patient", "id": "1899:221", "scale": 2 },
+  { "name": "reel-1",          "id": "1899:285", "scale": 2 },
+  { "name": "reel-2",          "id": "1899:295", "scale": 2 },
+  { "name": "reel-3",          "id": "1899:296", "scale": 2 },
+  { "name": "reel-4",          "id": "1899:297", "scale": 2 },
+  { "name": "doctors",         "id": "1899:326", "scale": 2 },
+  { "name": "cta-img",         "id": "1899:125", "scale": 2 },
+  { "name": "visit-bg",        "id": "1899:44",  "scale": 1 },
+  { "name": "reels-bg",        "id": "1899:45",  "scale": 1 },
+  { "name": "sadiq-trust",     "id": "2192:462", "scale": 1 }
+]

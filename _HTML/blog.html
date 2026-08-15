@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orchard Orthodontics Blog — Braces, Invisalign & Smile Care Advice</title>
+<meta name="description" content="Expert orthodontic advice from Orchard Orthodontics. Read our latest articles on Invisalign, Damon braces, treatment care, retainers and keeping your smile healthy.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  /* ---- Blog listing page (namespaced) ---- */
+  .page-blog .ph--dark { background: linear-gradient(135deg, #24384a, #101c26); }
+
+  /* flat cards on a light page: no white box / shadow, text flush under image */
+  .page-blog .blog-card { background: transparent; box-shadow: none; border-radius: 0; overflow: visible; }
+  .page-blog .blog-card .card__media { border-radius: var(--radius-card); }
+  .page-blog .blog-card .card__body { padding: 20px 0 0; gap: 12px; }
+  .page-blog .blog-card .card__meta { color: var(--c02); letter-spacing: .3px; }
+  .page-blog .blog-card h3 { font-size: 21px; line-height: 1.3; color: var(--c01); font-weight: 600; }
+  .page-blog .blog-card h3 a { color: inherit; }
+  .page-blog .blog-card h3 a:hover { color: var(--c03); }
+  .page-blog .blog-card p { color: var(--ct); font-size: 15px; }
+  .page-blog .card__more {
+    margin-top: auto; align-self: flex-start; display: inline-flex; align-items: center; gap: 8px;
+    font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: .6px; color: var(--c01);
+  }
+  .page-blog .card__more svg { width: 16px; transition: transform .25s var(--ease); }
+  .page-blog .card__more:hover { color: var(--c03); }
+  .page-blog .card__more:hover svg { transform: translateX(4px); }
+
+  .page-blog .blog-list .cards { gap: 40px 32px; }
+
+  /* pagination */
+  .page-blog .pager { display: flex; justify-content: center; align-items: center; gap: 10px; margin-top: 72px; }
+  .page-blog .pager a, .page-blog .pager span {
+    width: 44px; height: 44px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 500; color: var(--c01); border: 1px solid var(--hairline); text-decoration: none;
+    transition: background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease);
+  }
+  .page-blog .pager a:hover { border-color: var(--c03); color: var(--c03); }
+  .page-blog .pager .is-current { background: var(--c01); border-color: var(--c01); color: #fff; }
+  .page-blog .pager .pager__arrow svg { width: 18px; }
+
+  /* related posts panel */
+  .page-blog .blog-related { background: #f4f6f7; }
+  .page-blog .blog-related h2 { margin-bottom: 40px; }
+  .page-blog .blog-related .card { background: transparent; }
+
+  @media (max-width: 640px) {
+    .page-blog .pager { flex-wrap: wrap; }
+  }
+</style>
+</head>
+<body class="page-blog">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header is-solid">
+  <div class="container navbar">
+    <a class="brand" href="index.html" aria-label="Orchard Orthodontics home"><img src="images/logo.svg" alt="Orchard Orthodontics"></a>
+    <div class="navbar__right">
+      <div class="navbar__utility">
+        <div class="langmenu">
+          <button class="langmenu__toggle" aria-expanded="false" aria-haspopup="true">
+            <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18"/></svg>
+            Language <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg>
+          </button>
+          <div class="langmenu__panel">
+            <a href="#">🇪🇸 Spanish</a><a href="#">🇵🇹 Portuguese</a><a href="#">🇸🇦 Arabic (Saudi Arabia)</a><a href="#">🇨🇳 Chinese (Mandarin)</a>
+          </div>
+        </div>
+        <a href="dentist-referral.html"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="8" r="2.2"/><path d="M15.5 14.3c2.4.6 4.5 2.7 4.5 5.7"/></svg> Dentist Referrals</a>
+        <a href="#"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg> Patient Info</a>
+        <a class="topbar__phone" href="tel:02086497500"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg> 020 8649 7500</a>
+      </div>
+      <div class="navbar__bottom">
+        <nav class="nav" aria-label="Primary">
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">Treatments <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link" href="pricing.html">Pricing</a></div>
+          <div class="nav__item"><a class="nav__link" href="smile-gallery.html">Smile Gallery</a></div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">For Patients <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div>
+          </div>
+          <div class="nav__item has-dropdown">
+            <a class="nav__link" href="#">About Us <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+            <div class="dropdown"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div>
+          </div>
+          <div class="nav__item"><a class="nav__link" href="contact.html">Contact Us</a></div>
+        </nav>
+        <a class="btn btn--green btn--sm header__cta" href="booking.html">Free Consultation</a>
+      </div>
+    </div>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ===================== MOBILE MENU ===================== -->
+<div class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">Treatments <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="how-to-choose-orthodontist.html">Invisalign®</a><a href="inset.html">Damon Braces</a><a href="inset.html">NHS Braces</a><a href="inset.html">Carriere Motion</a><a href="how-remote-monitoring-works.html">AI Monitoring</a><a href="inset.html">Cosmetic Dentistry</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="pricing.html">Pricing</a></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="smile-gallery.html">Smile Gallery</a></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">For Patients <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="booking.html">New Patients</a><a href="pricing.html">Finance Options</a><a href="inset.html">FAQs</a></div></div>
+  <div class="mobile-menu__item has-sub"><a class="mobile-menu__link" href="#">About Us <svg class="caret" width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+    <div class="mobile-menu__sub"><a href="meet-team.html">Meet the Team</a><a href="meet-team.html">Award Winning Team</a><a href="blog.html">Blog</a></div></div>
+  <div class="mobile-menu__item"><a class="mobile-menu__link" href="contact.html">Contact Us</a></div>
+  <div class="mobile-menu__cta"><a class="btn btn--green" href="booking.html">Free Consultation</a></div>
+</div>
+
+<main id="main">
+
+  <!-- ===================== BLOG HERO ===================== -->
+  <section class="inset-hero">
+    <div class="inset-hero__bg"><img src="images/inner/blog/blog-09.png" alt="" loading="lazy"><!-- IMG: soft blurred clinic backdrop 16:9 --></div>
+    <div class="container">
+      <div class="inset-hero__grid">
+        <div>
+          <div class="crumb"><a href="index.html">Home</a> &nbsp;/&nbsp; <a href="#">About Us</a> &nbsp;/&nbsp; Blog</div>
+          <h1><strong>Blog</strong></h1>
+          <p>Guidance, insight and honest answers from our specialist orthodontic team. Explore the latest on Invisalign, braces, treatment care and everything that goes into a confident, healthy smile.</p>
+          <a class="btn btn--green" href="booking.html">Book a Free Consultation</a>
+        </div>
+        <div class="inset-hero__media"><img src="images/inner/blog/blog-08.png" alt="Smiling Orchard Orthodontics patient" loading="lazy"><!-- IMG: happy family with dog outdoors 4:3 --></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BLOG ARTICLE LISTING ===================== -->
+  <section class="section blog-list">
+    <div class="container">
+      <div class="cards cards--2">
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-01.png" alt="Patient fitting a clear Invisalign aligner" loading="lazy"><!-- IMG: patient fitting clear aligner 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">2 October 2025 · Invisalign</span>
+            <h3><a href="blog-detail.html">How Invisalign Gently Straightens Teeth Without Anyone Noticing</a></h3>
+            <p>Clear aligners have transformed orthodontics for adults and teenagers alike. We explain how the removable trays work week by week, why they are so discreet, and what to expect from your first fitting.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-02.png" alt="Close-up of Damon self-ligating braces" loading="lazy"><!-- IMG: Damon braces close-up 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">28 September 2025 · Braces</span>
+            <h3><a href="blog-detail.html">Damon Braces vs Traditional Braces: What Is the Real Difference?</a></h3>
+            <p>Self-ligating Damon braces promise fewer appointments and gentler tooth movement. Our specialists compare them with conventional fixed braces so you can understand which option may suit your smile.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-03.png" alt="Person brushing teeth while wearing braces" loading="lazy"><!-- IMG: person brushing teeth with braces 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">19 September 2025 · Treatment Care</span>
+            <h3><a href="blog-detail.html">Caring for Your Teeth and Gums During Orthodontic Treatment</a></h3>
+            <p>Keeping teeth clean around brackets and aligners takes a little extra care. Here are our practical, dentist-approved tips for brushing, flossing and protecting your enamel throughout treatment.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-04.png" alt="Child at an orthodontic consultation" loading="lazy"><!-- IMG: child at orthodontist consultation 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">11 September 2025 · Children</span>
+            <h3><a href="blog-detail.html">When Should Your Child First See an Orthodontist?</a></h3>
+            <p>The British Orthodontic Society recommends an early assessment by age seven. We look at why timing matters, what an early visit involves, and how it can make later treatment simpler.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-05.png" alt="Dental monitoring app shown on a smartphone" loading="lazy"><!-- IMG: dental monitoring app on smartphone 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">2 September 2025 · AI Monitoring</span>
+            <h3><a href="blog-detail.html">AI Monitoring: The Future of Remote Orthodontic Care</a></h3>
+            <p>Our AI-powered dental monitoring lets you scan your smile at home while our clinicians track progress remotely. Discover how this technology reduces visits without compromising your results.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-06.png" alt="Clear removable retainer being held" loading="lazy"><!-- IMG: clear retainer being held 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">25 August 2025 · Retainers</span>
+            <h3><a href="blog-detail.html">Retainers Explained: Keeping Your New Smile Straight for Life</a></h3>
+            <p>Finishing treatment is only half the journey. We explain why retainers are essential, the difference between fixed and removable options, and how to look after them so your smile stays put.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- pagination -->
+      <nav class="pager" aria-label="Blog pagination">
+        <a class="pager__arrow" href="#" aria-label="Previous page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 6l-6 6 6 6"/></svg></a>
+        <span class="is-current" aria-current="page">1</span>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a class="pager__arrow" href="#" aria-label="Next page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 6l6 6-6 6"/></svg></a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ===================== RELATED POSTS ===================== -->
+  <section class="section blog-related">
+    <div class="container">
+      <h2 class="reveal">Related Posts</h2>
+      <div class="cards cards--2">
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-07.png" alt="Healthy brace-friendly foods" loading="lazy"><!-- IMG: healthy foods for braces 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">18 August 2025 · Lifestyle</span>
+            <h3><a href="blog-detail.html">Five Foods to Avoid While Wearing Fixed Braces</a></h3>
+            <p>Certain foods can damage brackets and wires or slow your progress. Our team shares the everyday items to steer clear of, plus tasty, brace-friendly swaps that keep treatment on track.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+        <article class="card blog-card reveal">
+          <div class="card__media"><img src="images/inner/blog/blog-09.png" alt="Discussing an orthodontic payment plan" loading="lazy"><!-- IMG: finance and payment plan discussion 4:3 --></div>
+          <div class="card__body">
+            <span class="card__meta">9 August 2025 · Pricing</span>
+            <h3><a href="blog-detail.html">Understanding the Cost of Orthodontic Treatment</a></h3>
+            <p>From consultation to finance plans, we break down what influences the price of braces and Invisalign, and how interest-free monthly payments make specialist care more affordable than you might think.</p>
+            <a class="card__more" href="blog-detail.html">Read More <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="cta">
+    <div class="container">
+      <div class="cta__card reveal">
+        <div class="cta__media"><img src="images/inner/blog/blog-10.png" alt="Smiling patient using a phone in the city" loading="lazy"><!-- IMG: smiling patient using phone in the city 4:5 --></div>
+        <div class="cta__body">
+          <span class="eyebrow">Book a Free Consultation</span>
+          <h2>Ready to start your<br><strong>smile journey?</strong></h2>
+          <p>Book a free consultation at your nearest Orchard Orthodontics practice. Our specialist team will guide you through every step towards the confident smile you deserve.</p>
+          <a class="btn btn--green" href="booking.html">Book a Free Consultation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== VISIT US ===================== -->
+<section class="visit">
+  <div class="visit__bg"><img src="images/home/visit-bg.png" alt="" loading="lazy"></div>
+  <div class="container visit__grid">
+    <div class="reveal reveal--left">
+      <span class="eyebrow">Find us</span>
+      <h2>Visit Us</h2>
+      <p class="visit__sub">Three specialist practices across South London and Surrey. Choose your nearest location for directions, opening hours and contact details.</p>
+      <div class="locpick">
+        <button class="locpick__btn is-active" data-loc="croydon">Croydon</button>
+        <button class="locpick__btn" data-loc="brixton">Brixton</button>
+        <button class="locpick__btn" data-loc="guildford">Guildford</button>
+      </div>
+      <div data-loc-panel="croydon">
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>114-118 Cherry Orchard Road, Croydon<br>Greater London, CR0 6BA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:croydon@orchardortho.com">croydon@orchardortho.com</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div class="visit__hours"><span>Monday</span><span>9:00am – 5:00pm</span><span>Tuesday – Wednesday</span><span>9:00am – 6:00pm</span><span>Thursday</span><span>9:00am – 7:00pm</span><span>Friday</span><span>9:00am – 5:00pm</span><span>Saturday &amp; Sunday</span><span>Closed</span></div>
+        </div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="brixton" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 Brixton Hill, Brixton<br>London, SW2 1EG</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+      <div data-loc-panel="guildford" hidden>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dental &amp; Implant Centre, 6 Faraday Road<br>Guildford, GU1 1EA</span></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
+        <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
+        <a class="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
+      </div>
+    </div>
+    <div class="reveal reveal--right visit__map">
+      <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
+      <img class="visit__pin" src="images/map-pin.svg" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <a class="footer__logo" href="index.html"><img src="images/tio-logo.svg" alt="tio"></a>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><img src="images/social/ig.svg" alt=""></a>
+        <a href="#" aria-label="YouTube"><img src="images/social/youtube.svg" alt=""></a>
+        <a href="#" aria-label="Facebook"><img src="images/social/facebook.svg" alt=""></a>
+        <a href="#" aria-label="X (Twitter)"><img src="images/social/x.svg" alt=""></a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__meta">© Copyright 2025 <span>|</span> Orchard Orthodontics <span>|</span> All Rights Reserved</div>
+      <div class="footer__legal"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms &amp; Conditions</a><span>|</span><a href="#">Cookies Policy</a></div>
+    </div>
+  </div>
+</footer>
+
+<a class="grev" href="#" aria-label="Google reviews 4.8 stars">
+  <svg width="22" height="22" viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 01-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.7-2.4l-3.4-2.6c-.9.6-2 1-3.3 1-2.6 0-4.7-1.7-5.5-4.1H3v2.6A10 10 0 0012 22z"/><path fill="#FBBC05" d="M6.5 13.9a6 6 0 010-3.8V7.5H3a10 10 0 000 9z"/><path fill="#EA4335" d="M12 6.1c1.5 0 2.8.5 3.8 1.5l2.9-2.9A10 10 0 003 7.5l3.5 2.6C7.3 7.8 9.4 6.1 12 6.1z"/></svg>
+  <span><b>4.8</b> <span class="grev__stars">★★★★★</span><br>1,437 Google Reviews</span>
+</a>
+<a class="wa" href="#" aria-label="Chat on WhatsApp"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.2-1.4A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.4 1.7.9.8 1.7 1.1 2 1.2.2.1.4.1.5-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.2.1.4.2.4.3.1.2.1.7-.1 1.3z"/></svg></a>
+
+<script src="main.js" defer></script>
+</body>
+</html>

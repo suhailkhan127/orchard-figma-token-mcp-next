@@ -1,0 +1,20 @@
+Requirements
+=================
+https://www.figma.com/design/fnFKRTIsxMTUxbCdIIMVxc/Orchard-Orthodontics?node-id=1-13&t=Ht16fLzpYSMrt41O-0
+<FIGMA_TOKEN — stored in .env (gitignored)>
+Live = https://www.orchardortho.com/
+Porject Path = C:\Users\Saad\Desktop\orchard-figma-mcp-nextjs
+
+
+
+
+prompt do
+===============
+
+
+
+
+
+
+
+
