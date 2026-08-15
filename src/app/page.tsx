@@ -39,10 +39,10 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <span class="eyebrow">Video Testimonial</span>
         <h3>Real patients, <strong>real results</strong></h3>
         <div class="vtest__grid" data-carousel>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/vtest-1.png" alt="Maria Muller" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Maria Muller</b><span>Invisalign</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/vtest-2.png" alt="Tom Wehner" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Tom Wehner</b><span>Damon Braces</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/vtest-3.png" alt="Yvette Boehm" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Yvette Boehm</b><span>Dental Monitoring</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/vtest-4.png" alt="Rafael Gusikowski" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Rafael Gusikowski</b><span>Invisalign</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/keshika.jpg" alt="Keshika" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Keshika</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/jacqueline.jpg" alt="Jacqueline" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Jacqueline</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/ryan.jpg" alt="Ryan" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Ryan</b><span>Damon Braces</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/composite-bonding.jpg" alt="Composite bonding result" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Composite Bonding</b><span>Cosmetic Bonding</span></figcaption></figure>
         </div>
         <div class="vtest__foot">
           <a class="btn btn--white" href="/smile-gallery">Discover More</a>
@@ -56,15 +56,33 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
     <div class="container treat__grid">
       <div class="treat__body reveal reveal--left">
         <div class="treat__tabs">
-          <button class="treat__tab is-active">Invisalign</button>
-          <button class="treat__tab">Damon Braces</button>
-          <button class="treat__tab">NHS Braces</button>
+          <button class="treat__tab is-active" data-tab="0">Invisalign®</button>
+          <button class="treat__tab" data-tab="1">Damon Braces</button>
+          <button class="treat__tab" data-tab="2">NHS Braces</button>
         </div>
-        <h2>Flexible treatment<br><strong>for busy lives</strong></h2>
-        <p>Dr Sadiq specialises in Invisalign® treatments and has become one of London's top Invisalign® providers, with a proven track record of beautiful smiles.</p>
-        <a class="btn btn--navy" href="#">Discover More</a>
+        <div class="treat__panels">
+          <div class="treat__panel is-active" data-panel="0">
+            <h2>Specialist-led <strong>Invisalign® in London</strong></h2>
+            <p>Dr Sadiq provides specialist-led Invisalign® treatment for patients seeking discreet, carefully planned teeth straightening. Every case is individually assessed to ensure aligners are used appropriately — never as a shortcut.</p>
+            <a class="btn btn--navy" href="/inset">Invisalign®</a>
+          </div>
+          <div class="treat__panel" data-panel="1">
+            <h2>Precision orthodontics with <strong>Damon braces</strong></h2>
+            <p>Damon braces are an advanced self-ligating system designed for efficient, controlled tooth movement. In specialist hands they can reduce friction, improve comfort, and shorten treatment times.</p>
+            <a class="btn btn--navy" href="/inset">Damon Braces</a>
+          </div>
+          <div class="treat__panel" data-panel="2">
+            <h2>Is your child eligible for <strong>NHS braces?</strong></h2>
+            <p>NHS braces are available for children who meet specific clinical criteria. At Orchard Orthodontics our assessments are thorough, transparent and specialist-led — so parents can feel confident in every treatment decision.</p>
+            <a class="btn btn--navy" href="/inset">NHS Braces</a>
+          </div>
+        </div>
       </div>
-      <div class="treat__media reveal reveal--right"><img src="/images/home/treat-patient.png" alt="Orthodontic patient" loading="lazy"></div>
+      <div class="treat__media reveal reveal--right">
+        <img class="treat__img is-active" data-img="0" src="/images/home/tabs/invisalign.jpg" alt="Specialist-led Invisalign treatment in London">
+        <img class="treat__img" data-img="1" src="/images/home/tabs/damon.jpg" alt="Damon self-ligating braces">
+        <img class="treat__img" data-img="2" src="/images/home/tabs/nhs.jpg" alt="Child with NHS braces">
+      </div>
     </div>
   </section>
 
@@ -125,10 +143,18 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <span class="eyebrow reveal">Dr Videos Reels</span>
       <h2 class="reveal">What to Know<br><strong>Before Starting Treatment</strong></h2>
       <div class="reels__grid" data-carousel>
-        <div class="reel"><img src="/images/home/reel-1.png" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reel-2.png" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reel-3.png" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reel-4.png" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-01.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-02.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-03.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-04.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-05.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-06.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-07.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-08.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-09.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-10.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-11.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-12.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
       </div>
       <div class="reels__foot">
         <a class="btn btn--white" href="#">Discover More</a>
@@ -161,48 +187,6 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <p>Book a free consultation at your nearest Orchard Orthodontics practice. Our specialist team will guide you through every step towards the smile you deserve.</p>
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== VISIT US ===================== -->
-  <section class="visit">
-    <div class="visit__bg"><img src="/images/home/visit-bg.png" alt="" loading="lazy"></div>
-    <div class="container visit__grid">
-      <div class="reveal reveal--left">
-        <span class="eyebrow">Find us</span>
-        <h2>Visit Us</h2>
-        <p class="visit__sub">Three specialist practices across South London and Surrey. Choose your nearest location for directions, opening hours and contact details.</p>
-        <div class="locpick">
-          <button class="locpick__btn is-active" data-loc="croydon">Croydon</button>
-          <button class="locpick__btn" data-loc="brixton">Brixton</button>
-          <button class="locpick__btn" data-loc="guildford">Guildford</button>
-        </div>
-        <div data-loc-panel="croydon">
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>114-118 Cherry Orchard Road, Croydon<br>Greater London, CR0 6BA</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:croydon@orchardortho.com">croydon@orchardortho.com</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <div class="visit__hours"><span>Monday</span><span>9:00am – 5:00pm</span><span>Tuesday – Wednesday</span><span>9:00am – 6:00pm</span><span>Thursday</span><span>9:00am – 7:00pm</span><span>Friday</span><span>9:00am – 5:00pm</span><span>Saturday &amp; Sunday</span><span>Closed</span></div>
-          </div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-        <div data-loc-panel="brixton" hidden>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 Brixton Hill, Brixton<br>London, SW2 1EG</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-        <div data-loc-panel="guildford" hidden>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dental &amp; Implant Centre, 6 Faraday Road<br>Guildford, GU1 1EA</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-      </div>
-      <div class="reveal reveal--right visit__map">
-        <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
-        <img class="visit__pin" src="/images/map-pin.svg" alt="">
       </div>
     </div>
   </section>`;

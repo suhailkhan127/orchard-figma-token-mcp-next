@@ -432,8 +432,13 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 /* Treatments tabs */
 .treat__grid, .pricing__grid, .docs__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
 .treat__tabs { display: flex; gap: 28px; margin-bottom: 24px; }
-.treat__tab { font-size: 16px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase; color: #9aa6b0; padding-bottom: 6px; border-bottom: 2px solid transparent; }
+.treat__tab { font-size: 16px; font-weight: 600; letter-spacing: .3px; text-transform: uppercase; color: #9aa6b0; padding-bottom: 6px; border-bottom: 2px solid transparent; cursor: pointer; }
 .treat__tab.is-active { color: var(--c03); border-color: var(--c03); }
+.treat__panel { display: none; }
+.treat__panel.is-active { display: block; }
+.treat__media { position: relative; }
+.treat__img { position: absolute; inset: 0; opacity: 0; transition: opacity .4s var(--ease); }
+.treat__img.is-active { opacity: 1; }
 .treat__body h2, .pricing__body h2, .docs__body h2 { margin: 16px 0 20px; }
 .treat__body p, .pricing__body p, .docs__body p { color: var(--ct); margin-bottom: 32px; max-width: 460px; }
 .treat__media, .pricing__media { border-radius: var(--radius-card); aspect-ratio: 1/1; }
@@ -566,6 +571,17 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .cards, .cards--2, .cards--4 { grid-template-columns: 1fr; }
   .sbs--rev .sbs__media { order: 0; }
 }
+
+/* ==========================================================================
+   Sliders — any grid with adjacent .nav-arrows (JS adds .is-slider)
+   ========================================================================== */
+.is-slider { display: flex !important; flex-wrap: nowrap; overflow-x: auto; gap: 24px; scrollbar-width: none; scroll-behavior: smooth; padding-bottom: 6px; }
+.is-slider::-webkit-scrollbar { height: 0; display: none; }
+.is-slider > * { flex: 0 0 auto; width: calc(33.333% - 16px); }
+.vtest__grid.is-slider > *, .reels__grid.is-slider > * { width: calc(25% - 18px); }
+.cards--2.is-slider > * { width: calc(50% - 12px); }
+@media (max-width: 900px) { .is-slider > * { width: calc(58% - 12px) !important; } }
+@media (max-width: 560px) { .is-slider > * { width: 84% !important; } }
 
 /* ==========================================================================
    Video lightbox (popup) — opened by any .playbtn

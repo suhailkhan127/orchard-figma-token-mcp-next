@@ -117,18 +117,25 @@ export default function SiteScripts() {
       });
     }
 
-    // carousels
-    document.querySelectorAll("[data-carousel]").forEach((grid) => {
-      const scope = grid.closest("section") || document;
-      const prev = scope.querySelector("[data-prev]");
-      const next = scope.querySelector("[data-next]");
+    // carousels/sliders — pair each .nav-arrows with the grid before it, make it a horizontal slider
+    document.querySelectorAll(".nav-arrows").forEach((arrows) => {
+      const prev = arrows.querySelector("[data-prev]");
+      const next = arrows.querySelector("[data-next]");
       if (!prev || !next) return;
+      const scope = arrows.closest("section") || document;
+      const candidates = Array.from(scope.querySelectorAll<HTMLElement>('[class*="grid"], .cards'));
+      let grid: HTMLElement | null = null;
+      candidates.forEach((g) => {
+        if (g.compareDocumentPosition(arrows) & Node.DOCUMENT_POSITION_FOLLOWING) grid = g;
+      });
+      if (!grid) return;
+      (grid as HTMLElement).classList.add("is-slider");
       const step = () => {
-        const c = grid.querySelector(":scope > *");
-        return c ? (c as HTMLElement).getBoundingClientRect().width + 24 : 320;
+        const c = (grid as HTMLElement).firstElementChild as HTMLElement | null;
+        return c ? c.getBoundingClientRect().width + 24 : 320;
       };
-      on(prev, "click", () => grid.scrollBy({ left: -step(), behavior: "smooth" }));
-      on(next, "click", () => grid.scrollBy({ left: step(), behavior: "smooth" }));
+      on(prev, "click", () => (grid as HTMLElement).scrollBy({ left: -step(), behavior: "smooth" }));
+      on(next, "click", () => (grid as HTMLElement).scrollBy({ left: step(), behavior: "smooth" }));
     });
 
     // meet-team bio modal
@@ -202,6 +209,21 @@ export default function SiteScripts() {
       playBtns.forEach((btn) => on(btn, "click", (e) => { e.preventDefault(); e.stopPropagation(); openBox(VID); }));
       cleanups.push(() => box.remove());
     }
+
+    // treatments tabs — switch heading/description + image on click
+    document.querySelectorAll(".treat").forEach((sec) => {
+      const tabs = Array.from(sec.querySelectorAll(".treat__tab"));
+      const panels = Array.from(sec.querySelectorAll(".treat__panel"));
+      const imgs = Array.from(sec.querySelectorAll(".treat__img"));
+      tabs.forEach((tab) => {
+        on(tab, "click", () => {
+          const i = tab.getAttribute("data-tab");
+          tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
+          panels.forEach((p) => p.classList.toggle("is-active", p.getAttribute("data-panel") === i));
+          imgs.forEach((im) => im.classList.toggle("is-active", im.getAttribute("data-img") === i));
+        });
+      });
+    });
 
     // ensure hero background video autoplays (muted)
     document.querySelectorAll<HTMLVideoElement>(".hero__bg video").forEach((v) => {

@@ -14,9 +14,27 @@
     faqAccordion();
     locationPicker();
     carousels();
+    treatTabs();
     heroVideo();
     videoLightbox();
     scrollReveal();
+  }
+
+  /* ---- treatments tabs (switch heading/description + image) ---- */
+  function treatTabs() {
+    document.querySelectorAll('.treat').forEach(function (sec) {
+      var tabs = sec.querySelectorAll('.treat__tab');
+      var panels = sec.querySelectorAll('.treat__panel');
+      var imgs = sec.querySelectorAll('.treat__img');
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var i = tab.getAttribute('data-tab');
+          tabs.forEach(function (t) { t.classList.toggle('is-active', t === tab); });
+          panels.forEach(function (p) { p.classList.toggle('is-active', p.getAttribute('data-panel') === i); });
+          imgs.forEach(function (im) { im.classList.toggle('is-active', im.getAttribute('data-img') === i); });
+        });
+      });
+    });
   }
 
   /* ---- video lightbox (click any .playbtn -> popup autoplay) ---- */
@@ -50,14 +68,19 @@
     });
   }
 
-  /* ---- lightweight carousels (prev/next scroll the grid) ---- */
+  /* ---- carousels/sliders (pair each .nav-arrows with the grid before it) ---- */
   function carousels() {
-    document.querySelectorAll('[data-carousel]').forEach(function (grid) {
-      var foot = grid.parentElement.querySelector('.nav-arrows') || grid.nextElementSibling && grid.nextElementSibling.querySelector && grid.nextElementSibling.querySelector('.nav-arrows');
-      var scope = grid.closest('section') || document;
-      var prev = scope.querySelector('[data-prev]'), next = scope.querySelector('[data-next]');
+    document.querySelectorAll('.nav-arrows').forEach(function (arrows) {
+      var prev = arrows.querySelector('[data-prev]'), next = arrows.querySelector('[data-next]');
       if (!prev || !next) return;
-      var step = function () { var c = grid.querySelector(':scope > *'); return c ? c.getBoundingClientRect().width + 24 : 320; };
+      var scope = arrows.closest('section') || document;
+      var grid = null;
+      scope.querySelectorAll('[class*="grid"], .cards').forEach(function (g) {
+        if (g.compareDocumentPosition(arrows) & Node.DOCUMENT_POSITION_FOLLOWING) grid = g;
+      });
+      if (!grid) return;
+      grid.classList.add('is-slider');
+      var step = function () { var c = grid.firstElementChild; return c ? c.getBoundingClientRect().width + 24 : 320; };
       prev.addEventListener('click', function () { grid.scrollBy({ left: -step(), behavior: 'smooth' }); });
       next.addEventListener('click', function () { grid.scrollBy({ left: step(), behavior: 'smooth' }); });
     });

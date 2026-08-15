@@ -39,19 +39,19 @@ export default function VisitMap() {
                 <span>Saturday &amp; Sunday</span><span>Closed</span>
               </div>
             </div>
-            <a className="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><MapsArrow />Open in Google Maps</a>
+            <div className="visit__row"><MapsArrow /><a className="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener">Open in Google Maps</a></div>
           </div>
           <div data-loc-panel="brixton" hidden>
             <div className="visit__row"><PinIcon /><span>8 Brixton Hill, Brixton<br />London, SW2 1EG</span></div>
             <div className="visit__row"><PhoneIcon /><a href="tel:02086497500">020 8649 7500</a></div>
             <div className="visit__row"><MailIcon /><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
-            <a className="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><MapsArrow />Open in Google Maps</a>
+            <div className="visit__row"><MapsArrow /><a className="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener">Open in Google Maps</a></div>
           </div>
           <div data-loc-panel="guildford" hidden>
             <div className="visit__row"><PinIcon /><span>Dental &amp; Implant Centre, 6 Faraday Road<br />Guildford, GU1 1EA</span></div>
             <div className="visit__row"><PhoneIcon /><a href="tel:02086497500">020 8649 7500</a></div>
             <div className="visit__row"><MailIcon /><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
-            <a className="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><MapsArrow />Open in Google Maps</a>
+            <div className="visit__row"><MapsArrow /><a className="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener">Open in Google Maps</a></div>
           </div>
         </div>
         <div className="reveal reveal--right visit__map">
