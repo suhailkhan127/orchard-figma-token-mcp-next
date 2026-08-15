@@ -26,3 +26,6 @@ iconurls.json
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# personal requirements file (may contain live Figma token)
+Orchard-issues.txt
