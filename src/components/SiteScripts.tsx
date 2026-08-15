@@ -169,6 +169,48 @@ export default function SiteScripts() {
       }));
     }
 
+    // video lightbox — click any .playbtn opens a popup that autoplays the video
+    const playBtns = document.querySelectorAll(".playbtn");
+    if (playBtns.length) {
+      const VID = "/videos/orchard-hero-bg-video.mp4";
+      const box = document.createElement("div");
+      box.className = "vlightbox";
+      box.innerHTML =
+        '<div class="vlightbox__overlay" data-vclose></div>' +
+        '<div class="vlightbox__inner">' +
+        '<button class="vlightbox__close" data-vclose aria-label="Close">&times;</button>' +
+        '<video class="vlightbox__video" controls playsinline></video>' +
+        "</div>";
+      document.body.appendChild(box);
+      const video = box.querySelector("video") as HTMLVideoElement;
+      const closeBox = () => {
+        video.pause();
+        video.removeAttribute("src");
+        video.load();
+        box.classList.remove("is-open");
+        document.body.style.overflow = "";
+      };
+      const openBox = (src: string) => {
+        video.src = src;
+        box.classList.add("is-open");
+        document.body.style.overflow = "hidden";
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(() => {});
+      };
+      box.querySelectorAll("[data-vclose]").forEach((el) => on(el, "click", closeBox));
+      on(document, "keydown", (e) => { if ((e as KeyboardEvent).key === "Escape") closeBox(); });
+      playBtns.forEach((btn) => on(btn, "click", (e) => { e.preventDefault(); e.stopPropagation(); openBox(VID); }));
+      cleanups.push(() => box.remove());
+    }
+
+    // ensure hero background video autoplays (muted)
+    document.querySelectorAll<HTMLVideoElement>(".hero__bg video").forEach((v) => {
+      v.muted = true;
+      v.setAttribute("muted", "");
+      const p = v.play();
+      if (p && typeof p.catch === "function") p.catch(() => {});
+    });
+
     // scroll reveal
     const els = Array.from(document.querySelectorAll(".reveal"));
     if (reduced || !("IntersectionObserver" in window)) {

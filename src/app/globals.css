@@ -255,7 +255,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   overflow: hidden; background: var(--c01);
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
-.hero__bg img { width: 100%; height: 100%; object-fit: cover; }
+.hero__bg img, .hero__bg video { width: 100%; height: 100%; object-fit: cover; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(37,67,92,.72), rgba(37,67,92,.82)); }
 .hero__inner { position: relative; z-index: 2; max-width: 860px; margin-inline: auto; }
 .hero h1 { color: #fff; margin-bottom: 32px; }
@@ -412,17 +412,17 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 
 /* Awards + video testimonial */
 .awards { position: relative; padding: 100px 0 120px; background: #0f1a24; color: #fff; overflow: hidden; }
-.awards__bg { position: absolute; inset: 0; z-index: 0; opacity: .5; }
-.awards .container { position: relative; z-index: 2; }
-.awards__head { text-align: center; max-width: 640px; margin: 0 auto 80px; }
+.awards__bg { /* position: absolute; */ inset: 0; z-index: 0; /* opacity: .5; */ }
+.awards .container { /* position: absolute; */ z-index: 2; /* bottom: -100px; */ }
+.awards__head { text-align: center; max-width: 640px; margin: -600px auto 80px; }
 .awards__head h2 { color: #fff; margin-bottom: 16px; }
 .awards__head p { color: rgba(255,255,255,.8); margin-bottom: 28px; }
 
-.vtest { background: rgba(20,36,50,.72); border-radius: 28px; padding: 56px; }
+.vtest { padding: 76px; margin-top: -140px; z-index: 1; position: relative; border-radius: 16px; opacity: 0.9; background: linear-gradient(180deg, #25435C 0%, #101E29 100%); }
 .vtest .eyebrow { color: var(--c04); display: block; margin-bottom: 12px; }
 .vtest h3 { color: #fff; margin-bottom: 36px; }
 .vtest__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
-.vcard__thumb { border-radius: 12px; aspect-ratio: 3/4; display: grid; place-items: center; overflow: hidden; }
+.vcard__thumb { border-radius: 12px; aspect-ratio: 3/4; display: grid; place-items: center; overflow: hidden; position: relative; }
 .vcard figcaption { padding-top: 16px; }
 .vcard figcaption b { display: block; color: #fff; font-size: 18px; }
 .vcard figcaption span { color: rgba(255,255,255,.7); font-size: 14px; }
@@ -571,6 +571,18 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .cards, .cards--2, .cards--4 { grid-template-columns: 1fr; }
   .sbs--rev .sbs__media { order: 0; }
 }
+
+/* ==========================================================================
+   Video lightbox (popup) — opened by any .playbtn
+   ========================================================================== */
+.vlightbox { position: fixed; inset: 0; z-index: 200; display: none; align-items: center; justify-content: center; padding: 24px; }
+.vlightbox.is-open { display: flex; }
+.vlightbox__overlay { position: absolute; inset: 0; background: rgba(8,16,24,.88); }
+.vlightbox__inner { position: relative; z-index: 1; width: min(92vw, 960px); }
+.vlightbox__video { width: 100%; height: auto; max-height: 84vh; border-radius: 12px; background: #000; display: block; }
+.vlightbox__close { position: absolute; top: -48px; right: 0; width: 42px; height: 42px; border-radius: 50%; background: #fff; color: var(--c01); font-size: 26px; line-height: 1; display: grid; place-items: center; cursor: pointer; transition: background var(--dur) var(--ease); }
+.vlightbox__close:hover { background: var(--c04); }
+@media (max-width: 560px) { .vlightbox__close { top: -44px; } }
 
 /* ==========================================================================
    Reduced motion (WCAG 2.3.3) — mandatory kill-switch

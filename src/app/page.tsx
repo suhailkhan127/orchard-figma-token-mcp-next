@@ -2,7 +2,7 @@ import PageShell from "@/components/PageShell";
 
 const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="hero">
-    <div class="hero__bg"><img src="/images/home/hero-bg.png" alt="" fetchpriority="high"></div>
+    <div class="hero__bg"><video autoplay muted loop playsinline preload="auto" poster="/images/home/hero-bg.png"><source src="/videos/orchard-hero-bg-video.mp4" type="video/mp4"></video></div>
     <div class="hero__inner container">
       <h1>Your Smile Deserves <strong>a Specialist</strong></h1>
       <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
@@ -31,8 +31,10 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <p>We are delighted to announce that we have won best patient care at the 2025 Private Dentistry Awards.</p>
       <a class="btn btn--white" href="#">Discover More</a>
     </div>
+  </section>
 
-    <div class="container">
+  <!-- ===================== VIDEO TESTIMONIAL (moved out of .awards) ===================== -->
+  <div class="container">
       <div class="vtest reveal">
         <span class="eyebrow">Video Testimonial</span>
         <h3>Real patients, <strong>real results</strong></h3>
@@ -48,7 +50,6 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
       </div>
     </div>
-  </section>
 
   <!-- ===================== TREATMENTS TABS ===================== -->
   <section class="section treat">
