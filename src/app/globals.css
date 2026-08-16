@@ -1252,12 +1252,16 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 
 @media (max-width:1024px){
   .page-pricing .pfeats{grid-template-columns:repeat(2,1fr);gap:28px}
-  .page-pricing .calc__grid{grid-template-columns:1fr;gap:32px}
+  .page-pricing .calc__grid{grid-template-columns:1fr;gap:32px;padding:32px 24px}
+  .page-pricing .calc__tabs{flex-wrap:wrap}
 }
 @media (max-width:640px){
   .page-pricing .pfeats{grid-template-columns:1fr}
   .page-pricing .opts{grid-template-columns:1fr}
   .page-pricing .calc__row{grid-template-columns:1fr}
+  .page-pricing .calc__grid{padding:24px 18px}
+  .page-pricing .calc__panel{padding:18px}
+  .page-pricing .calc__tabs button{padding:9px 12px;font-size:11px;letter-spacing:.3px}
 }
 
 
