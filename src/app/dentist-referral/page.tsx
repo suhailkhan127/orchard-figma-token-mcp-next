@@ -48,20 +48,19 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Dentist's details -->
         <h2 class="rf-legend">Dentist's Details</h2>
         <div class="rf-grid">
-          <div><label for="d-first">First Name</label><input id="d-first" name="dentist-first-name" type="text" placeholder="First Name"></div>
-          <div><label for="d-last">Last Name</label><input id="d-last" name="dentist-last-name" type="text" placeholder="Last Name"></div>
-          <div><label for="d-practice">Practice Name</label><input id="d-practice" name="practice-name" type="text" placeholder="Practice Name"></div>
-          <div><label for="d-postcode">Practice Postcode</label><input id="d-postcode" name="practice-postcode" type="text" placeholder="Practice Postcode"></div>
+          <div><input id="d-first" name="dentist-first-name" type="text" placeholder="First Name" aria-label="First Name"></div>
+          <div><input id="d-last" name="dentist-last-name" type="text" placeholder="Last Name" aria-label="Last Name"></div>
+          <div><input id="d-practice" name="practice-name" type="text" placeholder="Practice Name" aria-label="Practice Name"></div>
+          <div><input id="d-postcode" name="practice-postcode" type="text" placeholder="Practice Postcode" aria-label="Practice Postcode"></div>
         </div>
 
         <!-- Patient details -->
         <h2 class="rf-legend">Patient Details</h2>
         <div class="rf-grid">
-          <div><label for="p-first">First Name</label><input id="p-first" name="patient-first-name" type="text" placeholder="First Name"></div>
-          <div><label for="p-last">Last Name</label><input id="p-last" name="patient-last-name" type="text" placeholder="Last Name"></div>
+          <div><input id="p-first" name="patient-first-name" type="text" placeholder="First Name" aria-label="First Name"></div>
+          <div><input id="p-last" name="patient-last-name" type="text" placeholder="Last Name" aria-label="Last Name"></div>
 
           <div>
-            <label for="p-dob-day">Date of Birth</label>
             <div class="rf-dob">
               <select id="p-dob-day" name="dob-day" aria-label="Day of birth">
                 <option value="" selected disabled hidden>Day</option>
@@ -77,13 +76,13 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
               </select>
             </div>
           </div>
-          <div><label for="p-mobile">Mobile Number</label><input id="p-mobile" name="patient-mobile" type="tel" placeholder="Mobile Number"></div>
+          <div><input id="p-mobile" name="patient-mobile" type="tel" placeholder="Phone Number" aria-label="Phone Number"></div>
 
-          <div><label for="p-email">Email Address</label><input id="p-email" name="patient-email" type="email" placeholder="Email Address"></div>
-          <div><label for="p-postcode">Postcode</label><input id="p-postcode" name="patient-postcode" type="text" placeholder="Postcode"></div>
+          <div><input id="p-email" name="patient-email" type="email" placeholder="Email" aria-label="Email"></div>
+          <div><input id="p-postcode" name="patient-postcode" type="text" placeholder="Postcode" aria-label="Postcode"></div>
 
-          <div class="rf-full"><label for="p-address">Address</label><input id="p-address" name="patient-address" type="text" placeholder="Address"></div>
-          <div class="rf-full"><label for="p-reason">Reason for Referral</label><textarea id="p-reason" name="reason" placeholder="Reason for Referral, treatment needed and any relevant clinical notes"></textarea></div>
+          <div class="rf-full"><input id="p-address" name="patient-address" type="text" placeholder="Address" aria-label="Address"></div>
+          <div class="rf-full"><textarea id="p-reason" name="reason" placeholder="Reason for Referral, treatment needed and any relevant clinical notes" aria-label="Reason for Referral"></textarea></div>
         </div>
 
         <!-- Radiographs -->
@@ -125,48 +124,6 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           <p>Every patient you refer is looked after by our specialist orthodontic team. Book a free consultation on their behalf, or invite them to get started directly with us.</p>
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== VISIT US ===================== -->
-  <section class="visit">
-    <div class="visit__bg"><img src="/images/home/visit-bg.png" alt=""></div>
-    <div class="container visit__grid">
-      <div class="reveal reveal--left">
-        <span class="eyebrow">Find us</span>
-        <h2>Visit Us</h2>
-        <p class="visit__sub">Three specialist practices across South London and Surrey. Choose your nearest location for directions, opening hours and contact details.</p>
-        <div class="locpick">
-          <button class="locpick__btn is-active" data-loc="croydon">Croydon</button>
-          <button class="locpick__btn" data-loc="brixton">Brixton</button>
-          <button class="locpick__btn" data-loc="guildford">Guildford</button>
-        </div>
-        <div data-loc-panel="croydon">
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>114-118 Cherry Orchard Road, Croydon<br>Greater London, CR0 6BA</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:croydon@orchardortho.com">croydon@orchardortho.com</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-            <div class="visit__hours"><span>Monday</span><span>9:00am – 5:00pm</span><span>Tuesday – Wednesday</span><span>9:00am – 6:00pm</span><span>Thursday</span><span>9:00am – 7:00pm</span><span>Friday</span><span>9:00am – 5:00pm</span><span>Saturday &amp; Sunday</span><span>Closed</span></div>
-          </div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-        <div data-loc-panel="brixton" hidden>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>8 Brixton Hill, Brixton<br>London, SW2 1EG</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:brixton@orchardortho.com">brixton@orchardortho.com</a></div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=8+Brixton+Hill+London+SW2+1EG" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-        <div data-loc-panel="guildford" hidden>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.3 7-11a7 7 0 10-14 0c0 4.7 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>Dental &amp; Implant Centre, 6 Faraday Road<br>Guildford, GU1 1EA</span></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z"/></svg><a href="tel:02086497500">020 8649 7500</a></div>
-          <div class="visit__row"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="mailto:ref@orchardortho.com">ref@orchardortho.com</a></div>
-          <a class="visit__maps" href="https://www.google.com/maps?q=6+Faraday+Road+Guildford+GU1+1EA" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg>Open in Google Maps</a>
-        </div>
-      </div>
-      <div class="reveal reveal--right visit__map">
-        <iframe title="Orchard Orthodontics location map" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
-        <img class="visit__pin" src="/images/map-pin.svg" alt="">
       </div>
     </div>
   </section>`;

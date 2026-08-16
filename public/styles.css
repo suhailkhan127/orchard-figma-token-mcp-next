@@ -147,7 +147,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   transition: background var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
 }
 .site-header.is-solid,
-.site-header.scrolled { background: var(--c01); box-shadow: 0 4px 24px rgba(0,0,0,.18); padding: 20px 0 10px; }
+.site-header.scrolled { background: var(--c01); box-shadow: 0 4px 24px rgba(0,0,0,.18); padding: 10px 0 10px; }
 
 /* main row — logo left, right column stacks utility (top) over nav+CTA (bottom) */
 .navbar { display: flex; align-items: center; gap: 20px; padding-block: 18px; }

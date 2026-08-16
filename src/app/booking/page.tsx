@@ -19,25 +19,20 @@ const CONTENT = `<!-- ===================== HERO + CONSULTATION FORM ===========
           <form class="site-form" action="#" method="post" novalidate>
             <div class="site-form__row">
               <div>
-                <label for="first-name">First name</label>
-                <input type="text" id="first-name" name="first-name" placeholder="First name" autocomplete="given-name" required>
+                <input type="text" id="first-name" name="first-name" placeholder="First name" autocomplete="given-name" aria-label="First name" required>
               </div>
               <div>
-                <label for="last-name">Last name</label>
-                <input type="text" id="last-name" name="last-name" placeholder="Last name" autocomplete="family-name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last name" autocomplete="family-name" aria-label="Last name" required>
               </div>
             </div>
             <div>
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+              <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" aria-label="Email" required>
             </div>
             <div>
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" name="phone" placeholder="020 8649 7500" autocomplete="tel" required>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" autocomplete="tel" aria-label="Phone Number" required>
             </div>
             <div>
-              <label for="location">Preferred location</label>
-              <select id="location" name="location" required>
+              <select id="location" name="location" aria-label="Preferred location" required>
                 <option value="" disabled selected>Select a practice</option>
                 <option value="croydon">Croydon</option>
                 <option value="brixton">Brixton</option>
@@ -45,8 +40,7 @@ const CONTENT = `<!-- ===================== HERO + CONSULTATION FORM ===========
               </select>
             </div>
             <div>
-              <label for="treatment">Preferred treatment</label>
-              <select id="treatment" name="treatment" required>
+              <select id="treatment" name="treatment" aria-label="Preferred treatment" required>
                 <option value="" disabled selected>Select a treatment</option>
                 <option value="invisalign">Invisalign®</option>
                 <option value="damon">Damon Braces</option>
@@ -58,8 +52,7 @@ const CONTENT = `<!-- ===================== HERO + CONSULTATION FORM ===========
               </select>
             </div>
             <div>
-              <label for="message">Your message</label>
-              <textarea id="message" name="message" placeholder="Tell us a little about what you'd like to achieve"></textarea>
+              <textarea id="message" name="message" placeholder="Tell us a little about what you'd like to achieve" aria-label="Your message"></textarea>
             </div>
             <button type="submit" class="btn btn--green">Book a Free Consultation</button>
           </form>

@@ -55,11 +55,11 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
             </div>
             <label>
               <span class="sr-only">Email</span>
-              <input type="email" name="email" placeholder="E-mail" autocomplete="email" required>
+              <input type="email" name="email" placeholder="Email" autocomplete="email" required>
             </label>
             <label>
-              <span class="sr-only">Phone number</span>
-              <input type="tel" name="phone" placeholder="Phone number" autocomplete="tel" required>
+              <span class="sr-only">Phone Number</span>
+              <input type="tel" name="phone" placeholder="Phone Number" autocomplete="tel" required>
             </label>
             <label>
               <span class="sr-only">Message</span>
