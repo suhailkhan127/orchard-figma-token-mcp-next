@@ -116,7 +116,6 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <span class="eyebrow">Care Beyond the Chair</span>
           <h2>The Sadiq Trust</h2>
           <p>Founded by Dr Sadiq in October 2023, The Sadiq Trust extends Orchard's commitment to care beyond clinical treatment. The charity supports vulnerable communities across multiple countries, with a particular focus on children with special needs and disabilities. Through the development of specialist education facilities – including a dedicated school in The Gambia – the Trust works to provide access, dignity, and opportunity where it is often lacking.</p>
-          <p>For Dr Sadiq, this is not a separate initiative. The same principles that guide Orchard Orthodontics – responsibility, long-term thinking and genuine care – underpin the work of the Trust. As the practice grows, so too does its ability to support this mission.</p>
           <a class="btn btn--white" href="#">Learn More About the Sadiq Trust</a>
         </div>
       </div>

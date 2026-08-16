@@ -19,9 +19,9 @@ export default function SiteScripts() {
       cleanups.push(() => el.removeEventListener(ev, fn, opts));
     };
 
-    // sticky header
+    // sticky header — toggle .scrolled on all pages (mobile hides the top utility row on scroll)
     const header = document.querySelector(".site-header");
-    if (header && !header.classList.contains("is-solid")) {
+    if (header) {
       const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
       onScroll();
       on(window, "scroll", onScroll, { passive: true });
@@ -129,7 +129,17 @@ export default function SiteScripts() {
         if (g.compareDocumentPosition(arrows) & Node.DOCUMENT_POSITION_FOLLOWING) grid = g;
       });
       if (!grid) return;
-      (grid as HTMLElement).classList.add("is-slider");
+      const g = grid as HTMLElement;
+      g.classList.add("is-slider");
+      // duplicate items until there's at least one full item of scroll room, so the arrows always move
+      const oneItem = () => {
+        const c = g.firstElementChild as HTMLElement | null;
+        return c ? c.getBoundingClientRect().width : 300;
+      };
+      let guard = 0;
+      while (g.scrollWidth - g.clientWidth < oneItem() && g.children.length && guard++ < 4) {
+        Array.from(g.children).forEach((k) => g.appendChild(k.cloneNode(true)));
+      }
       const step = () => {
         const c = (grid as HTMLElement).firstElementChild as HTMLElement | null;
         return c ? c.getBoundingClientRect().width + 24 : 320;

@@ -80,6 +80,12 @@
       });
       if (!grid) return;
       grid.classList.add('is-slider');
+      // duplicate items until there's at least one full item of scroll room, so the arrows always move
+      var oneItem = function () { var c = grid.firstElementChild; return c ? c.getBoundingClientRect().width : 300; };
+      var guard = 0;
+      while (grid.scrollWidth - grid.clientWidth < oneItem() && grid.children.length && guard++ < 4) {
+        Array.prototype.slice.call(grid.children).forEach(function (k) { grid.appendChild(k.cloneNode(true)); });
+      }
       var step = function () { var c = grid.firstElementChild; return c ? c.getBoundingClientRect().width + 24 : 320; };
       prev.addEventListener('click', function () { grid.scrollBy({ left: -step(), behavior: 'smooth' }); });
       next.addEventListener('click', function () { grid.scrollBy({ left: step(), behavior: 'smooth' }); });
@@ -89,7 +95,7 @@
   /* ---- sticky header: solid after scroll ---- */
   function stickyHeader() {
     var header = document.querySelector('.site-header');
-    if (!header || header.classList.contains('is-solid')) return; // inner pages force solid
+    if (!header) return; // toggle .scrolled on all pages (mobile hides top utility row on scroll)
     var onScroll = function () {
       header.classList.toggle('scrolled', window.scrollY > 40);
     };
