@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="inset-hero">
-    <div class="inset-hero__bg"><img src="/images/home/why-bg.png" alt="" loading="lazy"></div>
+    <div class="inset-hero__bg"><img src="/images/home/why-bg.png" alt=""></div>
     <div class="container">
       <div class="inset-hero__grid">
         <div>
@@ -19,7 +19,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
         <div class="inset-hero__media">
           <!-- IMG: smiling orthodontic patient portrait 4:3 -->
-          <img src="/images/inner/pricing/pricing-05.png" alt="Smiling Orchard Orthodontics patient" loading="lazy">
+          <img src="/images/inner/pricing/pricing-05.png" alt="Smiling Orchard Orthodontics patient">
         </div>
       </div>
     </div>
@@ -115,22 +115,29 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
 
         <span class="calc__label">Cost of treatment</span>
-        <div class="calc__field"><span class="unit">£</span><input type="text" value="6,000" aria-label="Cost of treatment"></div>
+        <div class="calc__row">
+          <div class="calc__field"><span class="unit">£</span><input type="text" value="6,000" aria-label="Cost of treatment"></div>
+          <input type="range" min="1000" max="12000" step="100" value="6000" aria-label="Cost of treatment slider">
+        </div>
 
-        <span class="calc__label">Deposit</span>
-        <div class="calc__field"><span class="unit">£</span><input type="text" value="1,500" aria-label="Deposit"></div>
+        <span class="calc__label">Deposit £ / %</span>
+        <div class="calc__row">
+          <div class="calc__field"><span class="unit">£</span><input type="text" value="1,500" aria-label="Deposit"></div>
+          <input type="range" min="0" max="6000" step="100" value="1500" aria-label="Deposit slider">
+        </div>
 
         <span class="calc__label">Repayment Timeframe (Monthly)</span>
         <div class="calc__row">
           <div class="calc__field">
+            <svg class="ico" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"></rect><path d="M16 2v4M8 2v4M3 10h18"></path></svg>
             <select aria-label="Repayment timeframe">
-              <option>6 Months</option>
-              <option selected>12 Months</option>
+              <option selected>6 Months</option>
+              <option>12 Months</option>
               <option>18 Months</option>
               <option>24 Months</option>
             </select>
           </div>
-          <input type="range" min="6" max="24" value="12" aria-label="Repayment timeframe slider">
+          <input type="range" min="6" max="24" value="6" aria-label="Repayment timeframe slider">
         </div>
       </div>
 
@@ -203,7 +210,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <div class="cta__card reveal">
         <div class="cta__media">
           <!-- IMG: happy patient on phone 1:1 -->
-          <img src="/images/inner/pricing/pricing-03.png" alt="Smiling patient checking her phone outside an Orchard Orthodontics practice" loading="lazy">
+          <img src="/images/inner/pricing/pricing-03.png" alt="Smiling patient checking her phone outside an Orchard Orthodontics practice">
         </div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>

@@ -17,7 +17,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
   <!-- ===================== WELCOME VIDEO BAND ===================== -->
   <section class="ty-video">
     <div class="ty-video__media">
-      <div class="ph ph--dark"><img src="/images/inner/thank-you/thank-you-01.png" alt="Orchard Orthodontics practice exterior" loading="lazy"></div>
+      <div class="ph ph--dark"><img src="/images/inner/thank-you/thank-you-01.png" alt="Orchard Orthodontics practice exterior"></div>
       <!-- IMG: Orchard Orthodontics practice exterior / welcome video 16:6 -->
       <button class="ty-video__play" aria-label="Play welcome video">
         <span class="playbtn"></span>
@@ -66,7 +66,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
         <div>
           <div class="ba">
             <!-- IMG: before/after smile — Invisalign 4:3 -->
-            <div class="ph"><img src="/images/inner/thank-you/thank-you-02.png" alt="Before and after Invisalign smile transformation" loading="lazy"></div>
+            <div class="ph"><img src="/images/inner/thank-you/thank-you-02.png" alt="Before and after Invisalign smile transformation"></div>
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -75,7 +75,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
         <div>
           <div class="ba">
             <!-- IMG: before/after smile — Damon braces 4:3 -->
-            <div class="ph"><img src="/images/inner/thank-you/thank-you-03.png" alt="Before and after Damon braces smile transformation" loading="lazy"></div>
+            <div class="ph"><img src="/images/inner/thank-you/thank-you-03.png" alt="Before and after Damon braces smile transformation"></div>
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -84,7 +84,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
         <div>
           <div class="ba">
             <!-- IMG: before/after smile — cosmetic bonding 4:3 -->
-            <div class="ph"><img src="/images/inner/thank-you/thank-you-04.png" alt="Before and after cosmetic bonding smile transformation" loading="lazy"></div>
+            <div class="ph"><img src="/images/inner/thank-you/thank-you-04.png" alt="Before and after cosmetic bonding smile transformation"></div>
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -128,7 +128,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
         </div>
         <div class="ty-callus__media reveal reveal--right">
           <!-- IMG: friendly Orchard clinician smiling in surgery 4:3 -->
-          <div class="ph"><img src="/images/inner/thank-you/thank-you-06.png" alt="Friendly Orchard clinician smiling in the surgery" loading="lazy"></div>
+          <div class="ph"><img src="/images/inner/thank-you/thank-you-06.png" alt="Friendly Orchard clinician smiling in the surgery"></div>
         </div>
       </div>
     </div>
@@ -140,7 +140,7 @@ const CONTENT = `<!-- ===================== CONFIRMATION HERO ==================
       <div class="cta__card reveal">
         <div class="cta__media">
           <!-- IMG: happy patient using phone outdoors in London 4:5 -->
-          <div class="ph ph--dark"><img src="/images/inner/thank-you/thank-you-08.png" alt="Happy patient using her phone outdoors in London" loading="lazy"></div>
+          <img src="/images/inner/thank-you/thank-you-08.png" alt="Happy patient using her phone outdoors in London">
         </div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>

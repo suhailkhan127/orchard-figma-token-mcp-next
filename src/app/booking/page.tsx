@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 const CONTENT = `<!-- ===================== HERO + CONSULTATION FORM ===================== -->
   <section class="inset-hero book-hero">
     <!-- IMG: South London street scene, softly blurred behind navy overlay 16:9 -->
-    <div class="inset-hero__bg ph ph--dark"><img src="/images/inner/booking/booking-01.png" alt="" loading="lazy"></div>
+    <div class="inset-hero__bg ph ph--dark"><img src="/images/inner/booking/booking-01.png" alt=""></div>
     <div class="container">
       <div class="inset-hero__grid book-hero__grid">
         <div class="reveal reveal--left">
@@ -67,7 +67,7 @@ const CONTENT = `<!-- ===================== HERO + CONSULTATION FORM ===========
         </div>
         <div class="reveal reveal--right inset-hero__media book-hero__media">
           <!-- IMG: smiling patient checking phone outdoors in London 3:4 -->
-          <div class="ph ph--portrait" style="width:100%;height:100%"><img src="/images/inner/booking/booking-02.png" alt="Smiling patient checking her phone on a London street" loading="lazy"></div>
+          <div class="ph ph--portrait" style="width:100%;height:100%"><img src="/images/inner/booking/booking-02.png" alt="Smiling patient checking her phone on a London street"></div>
         </div>
       </div>
     </div>

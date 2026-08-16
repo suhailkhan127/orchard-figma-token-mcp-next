@@ -6,11 +6,29 @@ export const metadata: Metadata = {
   description: "Discover how AI-powered remote dental monitoring works at Orchard Orthodontics. Track your orthodontic treatment from home with weekly smartphone scans and specialist review.",
 };
 
-const CONTENT = `<!-- ===================== HOW REMOTE MONITORING WORKS (navy card / inset-hero) ===================== -->
+const CONTENT = `<!-- ===================== INSET HERO ===================== -->
+  <section class="inset-hero">
+    <div class="inset-hero__bg"><img src="/images/home/why-bg.png" alt=""></div>
+    <div class="container">
+      <div class="inset-hero__grid">
+        <div class="reveal reveal--left">
+          <div class="crumb"><a href="/">Home</a> / Remote Monitoring</div>
+          <h1>AI-powered<br><strong>remote monitoring</strong></h1>
+          <p>Track your orthodontic treatment from the comfort of home. With weekly smartphone scans and specialist review, we keep your smile on track between visits — fewer appointments, the same expert care.</p>
+          <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
+        </div>
+        <div class="inset-hero__media reveal reveal--right">
+          <img src="/images/inner/how-remote-monitoring-works/how-remote-monitoring-works-01.png" alt="Smiling Orchard Orthodontics patient">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW REMOTE MONITORING WORKS (navy card) ===================== -->
   <section class="rm">
     <div class="container">
       <div class="rm__card reveal">
-        <h1 class="h1">How does <strong>remote monitoring work?</strong></h1>
+        <h2>How does <strong>remote monitoring work?</strong></h2>
         <p class="rm__intro">Using a smartphone application, we can monitor your treatment progress remotely. Here's how it works:</p>
 
         <div class="rm__steps">

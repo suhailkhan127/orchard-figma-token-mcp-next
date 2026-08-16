@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
   <section class="inset-hero">
-    <div class="inset-hero__bg"><img src="/images/inner/blog/blog-09.png" alt="" loading="lazy"><!-- IMG: soft blurred clinic backdrop 16:9 --></div>
+    <div class="inset-hero__bg"><img src="/images/inner/blog/blog-09.png" alt=""><!-- IMG: soft blurred clinic backdrop 16:9 --></div>
     <div class="container">
       <div class="inset-hero__grid">
         <div>
@@ -17,7 +17,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
           <p>Guidance, insight and honest answers from our specialist orthodontic team. Explore the latest on Invisalign, braces, treatment care and everything that goes into a confident, healthy smile.</p>
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
-        <div class="inset-hero__media"><img src="/images/inner/blog/blog-08.png" alt="Smiling Orchard Orthodontics patient" loading="lazy"><!-- IMG: happy family with dog outdoors 4:3 --></div>
+        <div class="inset-hero__media"><img src="/images/inner/blog/blog-08.png" alt="Smiling Orchard Orthodontics patient"><!-- IMG: happy family with dog outdoors 4:3 --></div>
       </div>
     </div>
   </section>
@@ -28,7 +28,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
       <div class="cards cards--2">
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-01.png" alt="Patient fitting a clear Invisalign aligner" loading="lazy"><!-- IMG: patient fitting clear aligner 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-01.png" alt="Patient fitting a clear Invisalign aligner"><!-- IMG: patient fitting clear aligner 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">2 October 2025 · Invisalign</span>
             <h3><a href="/blog-detail">How Invisalign Gently Straightens Teeth Without Anyone Noticing</a></h3>
@@ -38,7 +38,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-02.png" alt="Close-up of Damon self-ligating braces" loading="lazy"><!-- IMG: Damon braces close-up 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-02.png" alt="Close-up of Damon self-ligating braces"><!-- IMG: Damon braces close-up 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">28 September 2025 · Braces</span>
             <h3><a href="/blog-detail">Damon Braces vs Traditional Braces: What Is the Real Difference?</a></h3>
@@ -48,7 +48,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-03.png" alt="Person brushing teeth while wearing braces" loading="lazy"><!-- IMG: person brushing teeth with braces 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-03.png" alt="Person brushing teeth while wearing braces"><!-- IMG: person brushing teeth with braces 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">19 September 2025 · Treatment Care</span>
             <h3><a href="/blog-detail">Caring for Your Teeth and Gums During Orthodontic Treatment</a></h3>
@@ -58,7 +58,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-04.png" alt="Child at an orthodontic consultation" loading="lazy"><!-- IMG: child at orthodontist consultation 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-04.png" alt="Child at an orthodontic consultation"><!-- IMG: child at orthodontist consultation 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">11 September 2025 · Children</span>
             <h3><a href="/blog-detail">When Should Your Child First See an Orthodontist?</a></h3>
@@ -68,7 +68,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-05.png" alt="Dental monitoring app shown on a smartphone" loading="lazy"><!-- IMG: dental monitoring app on smartphone 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-05.png" alt="Dental monitoring app shown on a smartphone"><!-- IMG: dental monitoring app on smartphone 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">2 September 2025 · AI Monitoring</span>
             <h3><a href="/blog-detail">AI Monitoring: The Future of Remote Orthodontic Care</a></h3>
@@ -78,7 +78,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-06.png" alt="Clear removable retainer being held" loading="lazy"><!-- IMG: clear retainer being held 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-06.png" alt="Clear removable retainer being held"><!-- IMG: clear retainer being held 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">25 August 2025 · Retainers</span>
             <h3><a href="/blog-detail">Retainers Explained: Keeping Your New Smile Straight for Life</a></h3>
@@ -110,7 +110,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
       <div class="cards cards--2">
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-07.png" alt="Healthy brace-friendly foods" loading="lazy"><!-- IMG: healthy foods for braces 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-07.png" alt="Healthy brace-friendly foods"><!-- IMG: healthy foods for braces 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">18 August 2025 · Lifestyle</span>
             <h3><a href="/blog-detail">Five Foods to Avoid While Wearing Fixed Braces</a></h3>
@@ -120,7 +120,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
         </article>
 
         <article class="card blog-card reveal">
-          <div class="card__media"><img src="/images/inner/blog/blog-09.png" alt="Discussing an orthodontic payment plan" loading="lazy"><!-- IMG: finance and payment plan discussion 4:3 --></div>
+          <div class="card__media"><img src="/images/inner/blog/blog-09.png" alt="Discussing an orthodontic payment plan"><!-- IMG: finance and payment plan discussion 4:3 --></div>
           <div class="card__body">
             <span class="card__meta">9 August 2025 · Pricing</span>
             <h3><a href="/blog-detail">Understanding the Cost of Orthodontic Treatment</a></h3>
@@ -137,7 +137,7 @@ const CONTENT = `<!-- ===================== BLOG HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><img src="/images/inner/blog/blog-10.png" alt="Smiling patient using a phone in the city" loading="lazy"><!-- IMG: smiling patient using phone in the city 4:5 --></div>
+        <div class="cta__media"><img src="/images/inner/blog/blog-10.png" alt="Smiling patient using a phone in the city"><!-- IMG: smiling patient using phone in the city 4:5 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Ready to start your<br><strong>smile journey?</strong></h2>

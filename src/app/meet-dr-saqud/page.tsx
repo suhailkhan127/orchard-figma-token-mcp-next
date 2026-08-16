@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== DOCTOR HERO ===================== -->
   <section class="inset-hero">
-    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-04.png" alt="" loading="lazy"></div><!-- IMG: soft blurred clinic interior backdrop 16:9 --></div>
+    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-04.png" alt=""></div><!-- IMG: soft blurred clinic interior backdrop 16:9 --></div>
     <div class="container">
       <div class="inset-hero__grid drhero__grid">
         <div class="reveal reveal--left">
@@ -18,7 +18,7 @@ const CONTENT = `<!-- ===================== DOCTOR HERO ===================== --
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
         <div class="inset-hero__media drhero__media">
-          <div class="ph ph--dark"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-05.png" alt="Orchard Orthodontics specialist at the clinic reception" loading="lazy"></div><!-- IMG: Dr Kalim Sadiq studio portrait, dark suit, smiling 4:5 -->
+          <div class="ph ph--dark"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-05.png" alt="Orchard Orthodontics specialist at the clinic reception"></div><!-- IMG: Dr Kalim Sadiq studio portrait, dark suit, smiling 4:5 -->
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@ const CONTENT = `<!-- ===================== DOCTOR HERO ===================== --
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph ph--dark"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-03.png" alt="Patient with clear aligners using her phone on a London street" loading="lazy"></div><!-- IMG: patient with clear aligners using phone, city street 4:5 --></div>
+        <div class="cta__media"><img src="/images/inner/meet-dr-saqud/meet-dr-saqud-03.png" alt="Patient with clear aligners using her phone on a London street"><!-- IMG: patient with clear aligners using phone, city street 4:5 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Start your journey<br><strong>with Dr Sadiq</strong></h2>

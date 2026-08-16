@@ -15,7 +15,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           <p>Ready to see our smile transformations? Here at Orchard Orthodontics we treat patients with all sorts of orthodontic problems, the most common being crowding, spacing, protrusion and reverse bite. See the difference orthodontics has made for some of our patients suffering from these issues in our before and after galleries.</p>
         </div>
         <div class="inset-hero__media reveal reveal--right">
-          <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-01.png" alt="Smiling Orchard Orthodontics patient in a cream coat" loading="lazy"></div><!-- IMG: smiling patient portrait, cream jacket 4:3 -->
+          <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-01.png" alt="Smiling Orchard Orthodontics patient in a cream coat"></div><!-- IMG: smiling patient portrait, cream jacket 4:3 -->
         </div>
       </div>
     </div>
@@ -28,8 +28,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-02.png" alt="Natalie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Natalie before, crowded teeth 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's aligned smile after treatment" loading="lazy"></div><!-- IMG: Natalie after, aligned smile 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-02.png" alt="Natalie's teeth before orthodontic treatment"></div><!-- IMG: Natalie before, crowded teeth 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's aligned smile after treatment"></div><!-- IMG: Natalie after, aligned smile 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -41,8 +41,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-03.png" alt="Jodie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Jodie before, spacing 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's confident smile after treatment" loading="lazy"></div><!-- IMG: Jodie after, confident smile 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-03.png" alt="Jodie's teeth before orthodontic treatment"></div><!-- IMG: Jodie before, spacing 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's confident smile after treatment"></div><!-- IMG: Jodie after, confident smile 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -54,8 +54,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-04.png" alt="Jodie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Jodie before, protrusion 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's straight teeth after treatment" loading="lazy"></div><!-- IMG: Jodie after, straight teeth 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-04.png" alt="Jodie's teeth before orthodontic treatment"></div><!-- IMG: Jodie before, protrusion 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's straight teeth after treatment"></div><!-- IMG: Jodie after, straight teeth 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -67,8 +67,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-02.png" alt="Natalie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Natalie before, reverse bite 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's even smile after treatment" loading="lazy"></div><!-- IMG: Natalie after, even smile 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-02.png" alt="Natalie's teeth before orthodontic treatment"></div><!-- IMG: Natalie before, reverse bite 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's even smile after treatment"></div><!-- IMG: Natalie after, even smile 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -80,8 +80,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-03.png" alt="Natalie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Natalie before, crowding 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's aligned smile after treatment" loading="lazy"></div><!-- IMG: Natalie after, aligned smile 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-03.png" alt="Natalie's teeth before orthodontic treatment"></div><!-- IMG: Natalie before, crowding 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Natalie's aligned smile after treatment"></div><!-- IMG: Natalie after, aligned smile 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -93,8 +93,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <div class="sg-card reveal">
           <div class="ba">
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-04.png" alt="Jodie's teeth before orthodontic treatment" loading="lazy"></div><!-- IMG: Jodie before, spacing 1:1 -->
-            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's confident smile after treatment" loading="lazy"></div><!-- IMG: Jodie after, confident smile 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-04.png" alt="Jodie's teeth before orthodontic treatment"></div><!-- IMG: Jodie before, spacing 1:1 -->
+            <div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-08.png" alt="Jodie's confident smile after treatment"></div><!-- IMG: Jodie after, confident smile 1:1 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
           </div>
@@ -112,7 +112,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph"><img src="/images/inner/smile-gallery/smile-gallery-06.png" alt="Smiling patient using her phone on a London street" loading="lazy"></div><!-- IMG: smiling patient with phone, street 4:5 --></div>
+        <div class="cta__media"><img src="/images/inner/smile-gallery/smile-gallery-06.png" alt="Smiling patient using her phone on a London street"><!-- IMG: smiling patient with phone, street 4:5 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Your new smile<br><strong>starts here</strong></h2>

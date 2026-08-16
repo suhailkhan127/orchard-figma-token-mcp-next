@@ -11,7 +11,7 @@ const CONTENT = `<!-- ===================== ARTICLE HERO ===================== -
   <section class="bd-hero">
     <div class="bd-hero__bg">
       <!-- IMG: soft out-of-focus clinic backdrop 16:9 -->
-      <div class="ph ph--dark" style="width:100%;height:100%"><img src="/images/inner/blog-detail/blog-detail-05.png" alt="" loading="lazy"></div>
+      <div class="ph ph--dark" style="width:100%;height:100%"><img src="/images/inner/blog-detail/blog-detail-05.png" alt=""></div>
     </div>
     <div class="container">
       <div class="bd-hero__inner reveal">
@@ -24,7 +24,7 @@ const CONTENT = `<!-- ===================== ARTICLE HERO ===================== -
       </div>
       <div class="bd-hero__media reveal">
         <!-- IMG: smiling family relaxing outdoors, lead article photo 16:9 -->
-        <div class="ph"><img src="/images/inner/blog-detail/blog-detail-01.png" alt="Smiling family relaxing outdoors with their dog" loading="lazy"></div>
+        <div class="ph"><img src="/images/inner/blog-detail/blog-detail-01.png" alt="Smiling family relaxing outdoors with their dog"></div>
       </div>
     </div>
   </section>
@@ -80,7 +80,7 @@ const CONTENT = `<!-- ===================== ARTICLE HERO ===================== -
         <a class="card reveal" href="/blog">
           <div class="card__media">
             <!-- IMG: family enjoying a day outdoors 4:3 -->
-            <div class="ph" style="width:100%;height:100%"><img src="/images/inner/blog-detail/blog-detail-02.png" alt="Family enjoying a day outdoors together" loading="lazy"></div>
+            <div class="ph" style="width:100%;height:100%"><img src="/images/inner/blog-detail/blog-detail-02.png" alt="Family enjoying a day outdoors together"></div>
           </div>
           <div class="card__body">
             <span class="card__meta">28 September 2025</span>
@@ -111,7 +111,7 @@ const CONTENT = `<!-- ===================== ARTICLE HERO ===================== -
       <div class="cta__card reveal">
         <div class="cta__media">
           <!-- IMG: happy patient checking phone in London 4:5 -->
-          <div class="ph ph--dark" style="width:100%;height:100%"><img src="/images/inner/blog-detail/blog-detail-04.png" alt="Happy patient checking her phone in London" loading="lazy"></div>
+          <img src="/images/inner/blog-detail/blog-detail-04.png" alt="Happy patient checking her phone in London">
         </div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>

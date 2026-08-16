@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="inset-hero is-center">
-    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/before-after/before-after-21.png" alt="" loading="lazy"></div><!-- IMG: soft smiling patient portrait, faded 16:6 --></div>
+    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/before-after/before-after-21.png" alt=""></div><!-- IMG: soft smiling patient portrait, faded 16:6 --></div>
     <div class="container">
       <div class="inset-hero__grid">
         <div>
@@ -37,8 +37,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Row 1 -->
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -48,8 +48,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-03.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-04.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-03.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-04.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -59,8 +59,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="veneers">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-05.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-06.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-05.png" alt="Patient's smile before porcelain veneers"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-06.png" alt="Patient's smile after porcelain veneers"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -71,8 +71,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Row 2 -->
         <figure class="ba-case reveal" data-cat="invisalign">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-07.png" alt="Patient's smile before Invisalign treatment" loading="lazy"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-08.png" alt="Patient's smile after Invisalign treatment" loading="lazy"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-07.png" alt="Patient's smile before Invisalign treatment"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-08.png" alt="Patient's smile after Invisalign treatment"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -82,8 +82,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-09.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-10.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-09.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-10.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -93,8 +93,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="veneers">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-11.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-12.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-11.png" alt="Patient's smile before porcelain veneers"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-12.png" alt="Patient's smile after porcelain veneers"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -105,8 +105,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Row 3 -->
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-13.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-14.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-13.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-14.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -116,8 +116,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="damon">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-15.png" alt="Patient's smile before Damon braces" loading="lazy"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-16.png" alt="Patient's smile after Damon braces" loading="lazy"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-15.png" alt="Patient's smile before Damon braces"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-16.png" alt="Patient's smile after Damon braces"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -127,8 +127,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="veneers">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-17.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-18.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-17.png" alt="Patient's smile before porcelain veneers"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-18.png" alt="Patient's smile after porcelain veneers"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -139,8 +139,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Row 4 -->
         <figure class="ba-case reveal" data-cat="invisalign">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-19.png" alt="Patient's smile before Invisalign treatment" loading="lazy"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-20.png" alt="Patient's smile after Invisalign treatment" loading="lazy"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-19.png" alt="Patient's smile before Invisalign treatment"></div><!-- IMG: patient smile BEFORE Invisalign 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-20.png" alt="Patient's smile after Invisalign treatment"></div><!-- IMG: same patient smile AFTER Invisalign 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -150,8 +150,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-01.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-02.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -161,8 +161,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="veneers">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-03.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-04.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-03.png" alt="Patient's smile before porcelain veneers"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-04.png" alt="Patient's smile after porcelain veneers"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -173,8 +173,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         <!-- Row 5 -->
         <figure class="ba-case reveal" data-cat="bonding">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-05.png" alt="Patient's smile before cosmetic bonding" loading="lazy"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-06.png" alt="Patient's smile after cosmetic bonding" loading="lazy"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-05.png" alt="Patient's smile before cosmetic bonding"></div><!-- IMG: patient smile BEFORE cosmetic bonding 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-06.png" alt="Patient's smile after cosmetic bonding"></div><!-- IMG: same patient smile AFTER cosmetic bonding 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -184,8 +184,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="damon">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-07.png" alt="Patient's smile before Damon braces" loading="lazy"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-08.png" alt="Patient's smile after Damon braces" loading="lazy"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-07.png" alt="Patient's smile before Damon braces"></div><!-- IMG: patient smile BEFORE Damon braces 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-08.png" alt="Patient's smile after Damon braces"></div><!-- IMG: same patient smile AFTER Damon braces 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -195,8 +195,8 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
         <figure class="ba-case reveal" data-cat="veneers">
           <div class="ba">
-            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-09.png" alt="Patient's smile before porcelain veneers" loading="lazy"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
-            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-10.png" alt="Patient's smile after porcelain veneers" loading="lazy"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
+            <div class="ph ph--dark ba__before"><img src="/images/inner/before-after/before-after-09.png" alt="Patient's smile before porcelain veneers"></div><!-- IMG: patient smile BEFORE porcelain veneers 3:2 -->
+            <div class="ph ph--dark"><img src="/images/inner/before-after/before-after-10.png" alt="Patient's smile after porcelain veneers"></div><!-- IMG: same patient smile AFTER porcelain veneers 3:2 -->
             <span class="ba__divider"></span>
             <span class="ba__handle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M13 6l-6 6 6 6M11 6l6 6-6 6"/></svg></span>
             <span class="ba__tag ba__tag--b">BEFORE</span><span class="ba__tag ba__tag--a">AFTER</span>
@@ -212,7 +212,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph"><img src="/images/inner/before-after/before-after-22.png" alt="Happy patient checking her phone on a London street" loading="lazy"></div><!-- IMG: happy patient checking phone outdoors in London 4:5 --></div>
+        <div class="cta__media"><img src="/images/inner/before-after/before-after-22.png" alt="Happy patient checking her phone on a London street"><!-- IMG: happy patient checking phone outdoors in London 4:5 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>See the smile that's<br><strong>waiting for you</strong></h2>

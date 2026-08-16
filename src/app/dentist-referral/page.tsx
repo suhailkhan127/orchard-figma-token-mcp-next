@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="inset-hero">
-    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/dentist-referral/dentist-referral-01.png" alt="" loading="lazy"></div><!-- IMG: referring dentist / practice reception, faded 16:9 --></div>
+    <div class="inset-hero__bg"><div class="ph ph--dark"><img src="/images/inner/dentist-referral/dentist-referral-01.png" alt=""></div><!-- IMG: referring dentist / practice reception, faded 16:9 --></div>
     <div class="container">
       <h1>Patient <strong>Referral</strong></h1>
       <p>Refer a patient to Orchard Orthodontics in just a few minutes. Complete the form below with the patient's details and our specialist team will be in touch to arrange their assessment. We welcome both NHS and private referrals across our South London and Surrey practices.</p>
@@ -118,7 +118,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph ph--dark"><img src="/images/inner/dentist-referral/dentist-referral-02.png" alt="Orthodontic patient outside a London practice" loading="lazy"></div><!-- IMG: happy patient using phone, London street 3:4 --></div>
+        <div class="cta__media"><img src="/images/inner/dentist-referral/dentist-referral-02.png" alt="Orthodontic patient outside a London practice"><!-- IMG: happy patient using phone, London street 3:4 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Refer with confidence,<br><strong>we'll take it from here</strong></h2>
@@ -131,7 +131,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
 
   <!-- ===================== VISIT US ===================== -->
   <section class="visit">
-    <div class="visit__bg"><img src="/images/home/visit-bg.png" alt="" loading="lazy"></div>
+    <div class="visit__bg"><img src="/images/home/visit-bg.png" alt=""></div>
     <div class="container visit__grid">
       <div class="reveal reveal--left">
         <span class="eyebrow">Find us</span>
@@ -165,7 +165,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
         </div>
       </div>
       <div class="reveal reveal--right visit__map">
-        <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
+        <iframe title="Orchard Orthodontics location map" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed"></iframe>
         <img class="visit__pin" src="/images/map-pin.svg" alt="">
       </div>
     </div>

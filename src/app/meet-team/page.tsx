@@ -15,7 +15,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <p>Behind every Orchard Orthodontics smile is a team of specialist orthodontists, therapists and hygienists. Our GDC-registered clinicians combine years of experience with genuine, friendly care across our practices in South London and Surrey.</p>
         </div>
         <div class="inset-hero__media reveal reveal--right">
-          <div class="ph"><img src="/images/inner/meet-team/meet-team-06.png" alt="Smiling specialist orthodontist" loading="lazy"></div>
+          <div class="ph"><img src="/images/inner/meet-team/meet-team-06.png" alt="Smiling specialist orthodontist"></div>
           <!-- IMG: smiling lead orthodontist portrait 4:5 -->
         </div>
       </div>
@@ -38,7 +38,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 1 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Dr Priya Agarwal, specialist orthodontist" loading="lazy"></div><!-- IMG: Dr Priya Agarwal portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Dr Priya Agarwal, specialist orthodontist"></div><!-- IMG: Dr Priya Agarwal portrait 1:1 --></div>
           <span class="tcard__role">Specialist Orthodontist</span>
           <span class="tcard__name">Dr Priya Agarwal</span>
           <span class="tcard__gdc">GDC: 70629</span>
@@ -48,7 +48,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Specialist Orthodontist</span>
             <h3>Dr Priya Agarwal</h3>
             <p class="tcard__gdc">GDC: 70629</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Priya Agarwal, specialist orthodontist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Priya Agarwal, specialist orthodontist"></div>
             <p>Priya qualified in dentistry before completing three further years of specialist orthodontic training, and now leads treatment planning across our South London practices. She has a special interest in clear aligner therapy and treating adult patients who thought orthodontics was no longer an option for them.</p>
             <p>She believes the best results come from listening first. Priya takes time to understand what each patient wants from their smile, then designs a treatment plan around their lifestyle, budget and goals — explaining every step in plain English along the way.</p>
             <p>Outside the practice, Priya mentors newly qualified clinicians and regularly attends conferences to stay at the forefront of orthodontic techniques.</p>
@@ -57,7 +57,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 2 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-02.png" alt="Haneta Rondonuwu, orthodontic therapist" loading="lazy"></div><!-- IMG: Haneta Rondonuwu portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-02.png" alt="Haneta Rondonuwu, orthodontic therapist"></div><!-- IMG: Haneta Rondonuwu portrait 1:1 --></div>
           <span class="tcard__role">Orthodontic Therapist</span>
           <span class="tcard__name">Haneta Rondonuwu</span>
           <span class="tcard__gdc">GDC: 22356</span>
@@ -67,7 +67,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Orthodontic Therapist</span>
             <h3>Haneta Rondonuwu</h3>
             <p class="tcard__gdc">GDC: 22356</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Haneta Rondonuwu, orthodontic therapist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Haneta Rondonuwu, orthodontic therapist"></div>
             <p>Haneta joined Orchard Orthodontics after training and working in both hospital and private practice. As an orthodontic therapist she carries out much of the hands-on care during treatment — fitting brackets, changing wires, taking impressions and keeping each smile on track between reviews.</p>
             <p>Patients love her calm, reassuring manner, especially younger patients and anyone feeling nervous about their first appointment. Haneta is passionate about making every visit comfortable and stress-free.</p>
             <p>She has extensive experience treating patients with fixed appliances and aligners, and takes real pride in seeing a smile transform from the first fitting to the final reveal.</p>
@@ -76,7 +76,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 3 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-03.png" alt="Dr James Whitmore, specialist orthodontist" loading="lazy"></div><!-- IMG: Dr James Whitmore portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-03.png" alt="Dr James Whitmore, specialist orthodontist"></div><!-- IMG: Dr James Whitmore portrait 1:1 --></div>
           <span class="tcard__role">Specialist Orthodontist</span>
           <span class="tcard__name">Dr James Whitmore</span>
           <span class="tcard__gdc">GDC: 68142</span>
@@ -86,7 +86,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Specialist Orthodontist</span>
             <h3>Dr James Whitmore</h3>
             <p class="tcard__gdc">GDC: 68142</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr James Whitmore, specialist orthodontist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr James Whitmore, specialist orthodontist"></div>
             <p>James has spent his career helping patients of every age achieve healthier, straighter smiles. He is a specialist orthodontist with a keen interest in early treatment for children, guiding developing teeth and jaws to reduce the need for more complex work later on.</p>
             <p>He treats a wide range of cases, from NHS braces for younger patients to Damon and Invisalign for adults, and is known for his thorough, gentle approach.</p>
             <p>James is committed to continuing education and shares his knowledge with the wider team through regular in-practice training sessions.</p>
@@ -95,7 +95,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 4 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-04.png" alt="Sofia Almeida, orthodontic therapist" loading="lazy"></div><!-- IMG: Sofia Almeida portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-04.png" alt="Sofia Almeida, orthodontic therapist"></div><!-- IMG: Sofia Almeida portrait 1:1 --></div>
           <span class="tcard__role">Orthodontic Therapist</span>
           <span class="tcard__name">Sofia Almeida</span>
           <span class="tcard__gdc">GDC: 24518</span>
@@ -105,7 +105,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Orthodontic Therapist</span>
             <h3>Sofia Almeida</h3>
             <p class="tcard__gdc">GDC: 24518</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Sofia Almeida, orthodontic therapist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Sofia Almeida, orthodontic therapist"></div>
             <p>Sofia brings warmth and precision to every appointment. As an orthodontic therapist she works alongside our specialists to deliver day-to-day care, from bonding brackets to fitting retainers and offering oral hygiene advice.</p>
             <p>Fluent in Portuguese as well as English, Sofia is a familiar and welcoming face for many of our patients and their families.</p>
             <p>She is a firm believer that a great smile is built on great habits, and enjoys coaching patients on how to look after their teeth throughout treatment and beyond.</p>
@@ -114,7 +114,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 5 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Dr Aisha Khan, specialist orthodontist" loading="lazy"></div><!-- IMG: Dr Aisha Khan portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Dr Aisha Khan, specialist orthodontist"></div><!-- IMG: Dr Aisha Khan portrait 1:1 --></div>
           <span class="tcard__role">Specialist Orthodontist</span>
           <span class="tcard__name">Dr Aisha Khan</span>
           <span class="tcard__gdc">GDC: 71903</span>
@@ -124,7 +124,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Specialist Orthodontist</span>
             <h3>Dr Aisha Khan</h3>
             <p class="tcard__gdc">GDC: 71903</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Aisha Khan, specialist orthodontist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Aisha Khan, specialist orthodontist"></div>
             <p>Aisha combines specialist orthodontic expertise with a love of the latest technology. She uses digital scanning and AI-assisted monitoring to plan precise, predictable treatment and keep patients on track with fewer in-practice visits.</p>
             <p>She has a particular interest in aesthetic orthodontics for adults, helping busy professionals straighten their teeth discreetly with clear aligners and tooth-coloured appliances.</p>
             <p>Aisha is dedicated to patient comfort and takes great care to make every step of the journey feel calm, clear and reassuring.</p>
@@ -133,7 +133,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 6 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-02.png" alt="Grace Lim, orthodontic therapist" loading="lazy"></div><!-- IMG: Grace Lim portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-02.png" alt="Grace Lim, orthodontic therapist"></div><!-- IMG: Grace Lim portrait 1:1 --></div>
           <span class="tcard__role">Orthodontic Therapist</span>
           <span class="tcard__name">Grace Lim</span>
           <span class="tcard__gdc">GDC: 25610</span>
@@ -143,7 +143,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Orthodontic Therapist</span>
             <h3>Grace Lim</h3>
             <p class="tcard__gdc">GDC: 25610</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Grace Lim, orthodontic therapist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Grace Lim, orthodontic therapist"></div>
             <p>Grace is an orthodontic therapist who thrives on the day-to-day detail of treatment — adjusting appliances, fitting aligners and tracking each patient's progress with real care and attention.</p>
             <p>She has a gift for putting nervous patients at ease and is especially popular with children and teenagers, who quickly feel comfortable in her chair.</p>
             <p>Grace is a strong advocate for preventive care and enjoys teaching patients simple routines that keep their teeth and appliances in top condition.</p>
@@ -152,7 +152,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 7 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-03.png" alt="Dr Daniel Osei, specialist orthodontist" loading="lazy"></div><!-- IMG: Dr Daniel Osei portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-03.png" alt="Dr Daniel Osei, specialist orthodontist"></div><!-- IMG: Dr Daniel Osei portrait 1:1 --></div>
           <span class="tcard__role">Specialist Orthodontist</span>
           <span class="tcard__name">Dr Daniel Osei</span>
           <span class="tcard__gdc">GDC: 69255</span>
@@ -162,7 +162,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Specialist Orthodontist</span>
             <h3>Dr Daniel Osei</h3>
             <p class="tcard__gdc">GDC: 69255</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Daniel Osei, specialist orthodontist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Dr Daniel Osei, specialist orthodontist"></div>
             <p>Daniel is a specialist orthodontist known for taking on more complex cases, including patients who need combined orthodontic and restorative care. He works closely with referring dentists to plan treatment that is both functional and beautiful.</p>
             <p>He is a patient, methodical clinician who believes in taking the time to get things right, and in explaining the reasoning behind every decision.</p>
             <p>Daniel finds the most rewarding part of his work is seeing the boost in confidence that a new smile brings to his patients.</p>
@@ -171,7 +171,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 8 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-04.png" alt="Marco Bianchi, dental hygienist" loading="lazy"></div><!-- IMG: Marco Bianchi portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-04.png" alt="Marco Bianchi, dental hygienist"></div><!-- IMG: Marco Bianchi portrait 1:1 --></div>
           <span class="tcard__role">Dental Hygienist</span>
           <span class="tcard__name">Marco Bianchi</span>
           <span class="tcard__gdc">GDC: 30447</span>
@@ -181,7 +181,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Dental Hygienist</span>
             <h3>Marco Bianchi</h3>
             <p class="tcard__gdc">GDC: 30447</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Marco Bianchi, dental hygienist" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-08.png" alt="Marco Bianchi, dental hygienist"></div>
             <p>Marco plays a vital role in keeping our patients' smiles healthy. As a dental hygienist he provides professional cleaning, tailored oral-health advice and the support patients need to care for their teeth around braces and aligners.</p>
             <p>Healthy gums are the foundation of successful orthodontic treatment, and Marco makes sure every patient has the tools and knowledge to keep theirs in great shape.</p>
             <p>Approachable and encouraging, he turns oral hygiene into a habit patients actually enjoy keeping up.</p>
@@ -190,7 +190,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
         <!-- Card 9 -->
         <button class="tcard reveal" type="button">
-          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Ella Thompson, treatment coordinator" loading="lazy"></div><!-- IMG: Ella Thompson portrait 1:1 --></div>
+          <div class="tcard__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-01.png" alt="Ella Thompson, treatment coordinator"></div><!-- IMG: Ella Thompson portrait 1:1 --></div>
           <span class="tcard__role">Treatment Coordinator</span>
           <span class="tcard__name">Ella Thompson</span>
           <span class="tcard__gdc">Patient Care</span>
@@ -200,7 +200,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
             <span class="tcard__role">Treatment Coordinator</span>
             <h3>Ella Thompson</h3>
             <p class="tcard__gdc">Patient Care</p>
-            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Ella Thompson, treatment coordinator" loading="lazy"></div>
+            <div class="tcard__media-full"><img src="/images/inner/meet-team/meet-team-06.png" alt="Ella Thompson, treatment coordinator"></div>
             <p>Ella is the warm welcome at the heart of Orchard Orthodontics. As our treatment coordinator she helps new patients understand their options, talks through finance and payment plans, and makes booking that first appointment simple and stress-free.</p>
             <p>She knows that starting orthodontic treatment can feel like a big decision, so she takes the time to answer every question and make sure patients feel completely at ease.</p>
             <p>From your very first enquiry to the day your braces come off, Ella is there to support you every step of the way.</p>
@@ -215,7 +215,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph ph--dark"><img src="/images/inner/meet-team/meet-team-08.png" alt="Patient smiling while using phone outdoors" loading="lazy"></div><!-- IMG: patient smiling on phone outdoors 4:5 --></div>
+        <div class="cta__media"><img src="/images/inner/meet-team/meet-team-08.png" alt="Patient smiling while using phone outdoors"><!-- IMG: patient smiling on phone outdoors 4:5 --></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Ready to meet<br><strong>your new team?</strong></h2>
@@ -234,7 +234,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6l12 12M18 6L6 18"/></svg>
       </button>
       <div class="bio-modal__grid">
-        <div class="bio-modal__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-06.png" alt="Orchard Orthodontics clinician portrait" loading="lazy"></div></div>
+        <div class="bio-modal__media"><div class="ph"><img src="/images/inner/meet-team/meet-team-06.png" alt="Orchard Orthodontics clinician portrait"></div></div>
         <div class="bio-modal__text" id="bioModalText"></div>
       </div>
     </div>

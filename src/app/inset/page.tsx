@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="inset-hero">
-    <div class="inset-hero__bg ph ph--dark"><img src="/images/inner/inset/inset-07.png" alt="" loading="lazy"></div><!-- IMG: soft clinic backdrop, faded 16:9 -->
+    <div class="inset-hero__bg ph ph--dark"><img src="/images/inner/inset/inset-07.png" alt=""></div><!-- IMG: soft clinic backdrop, faded 16:9 -->
     <div class="container">
       <div class="inset-hero__grid">
         <div class="reveal reveal--left">
@@ -18,7 +18,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
         <div class="inset-hero__media reveal reveal--right">
-          <div class="ph"><img src="/images/inner/inset/inset-01.png" alt="Smiling Invisalign patient in the dental chair" loading="lazy"></div><!-- IMG: smiling Invisalign patient in dental chair 4:3 -->
+          <div class="ph"><img src="/images/inner/inset/inset-01.png" alt="Smiling Invisalign patient in the dental chair"></div><!-- IMG: smiling Invisalign patient in dental chair 4:3 -->
           <div class="inplay"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div>
         </div>
       </div>
@@ -35,7 +35,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <a class="btn btn--navy" href="/booking">Start Your Consultation</a>
         </div>
         <div class="sbs__media reveal reveal--left">
-          <div class="ph"><img src="/images/inner/inset/inset-02.png" alt="Hand holding an open Invisalign aligner case" loading="lazy"></div><!-- IMG: hand holding open Invisalign aligner case 1:1 -->
+          <div class="ph"><img src="/images/inner/inset/inset-02.png" alt="Hand holding an open Invisalign aligner case"></div><!-- IMG: hand holding open Invisalign aligner case 1:1 -->
           <div class="inplay"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div>
         </div>
       </div>
@@ -70,7 +70,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <a class="btn btn--navy" href="/pricing">View Pricing</a>
         </div>
         <div class="sbs__media reveal reveal--right">
-          <div class="ph"><img src="/images/inner/inset/inset-03.png" alt="Relaxed patient smiling in the Orchard Orthodontics reception" loading="lazy"></div><!-- IMG: relaxed patient smiling in reception 1:1 -->
+          <div class="ph"><img src="/images/inner/inset/inset-03.png" alt="Relaxed patient smiling in the Orchard Orthodontics reception"></div><!-- IMG: relaxed patient smiling in reception 1:1 -->
         </div>
       </div>
     </div>
@@ -78,7 +78,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== FULL-BLEED VIDEO BAND ===================== -->
   <section class="invideo">
-    <div class="invideo__bg ph ph--dark"><img src="/images/inner/inset/inset-04.png" alt="" loading="lazy"></div><!-- IMG: Orchard Orthodontics practice exterior signage 16:6 -->
+    <div class="invideo__bg ph ph--dark"><img src="/images/inner/inset/inset-04.png" alt=""></div><!-- IMG: Orchard Orthodontics practice exterior signage 16:6 -->
     <button class="playbtn" aria-label="Play video"></button>
     <span class="playbtn__label">Play Video</span>
   </section>
@@ -116,7 +116,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <p style="max-width:760px;margin-bottom:44px">Invisalign is one of several specialist options we offer. Whichever route is right for you, our team will recommend the treatment that fits your smile, your lifestyle and your budget.</p>
       <div class="cards">
         <article class="card reveal">
-          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-06.png" alt="Patient after Damon braces treatment" loading="lazy"></div></div><!-- IMG: Damon braces patient 4:3 -->
+          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-06.png" alt="Patient after Damon braces treatment"></div></div><!-- IMG: Damon braces patient 4:3 -->
           <div class="card__body">
             <span class="card__meta">Damon Braces</span>
             <h3>Discreet fixed braces that work faster.</h3>
@@ -125,7 +125,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-01.png" alt="Young patient with NHS braces" loading="lazy"></div></div><!-- IMG: NHS braces young patient 4:3 -->
+          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-01.png" alt="Young patient with NHS braces"></div></div><!-- IMG: NHS braces young patient 4:3 -->
           <div class="card__body">
             <span class="card__meta">NHS Braces</span>
             <h3>Specialist orthodontic care on the NHS.</h3>
@@ -134,7 +134,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-05.png" alt="Clear aligner used alongside Carriere Motion treatment" loading="lazy"></div></div><!-- IMG: Carriere Motion appliance 4:3 -->
+          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-05.png" alt="Clear aligner used alongside Carriere Motion treatment"></div></div><!-- IMG: Carriere Motion appliance 4:3 -->
           <div class="card__body">
             <span class="card__meta">Carriere Motion</span>
             <h3>Correct your bite before aligners begin.</h3>
@@ -161,7 +161,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           <a class="btn btn--navy" href="/meet-team">Meet the Doctor</a>
         </div>
         <div class="sbs__media reveal reveal--right">
-          <div class="ph ph--portrait"><img src="/images/inner/inset/inset-08.png" alt="Specialist orthodontist portrait" loading="lazy"></div><!-- IMG: specialist orthodontist portrait 4:5 -->
+          <div class="ph ph--portrait"><img src="/images/inner/inset/inset-08.png" alt="Specialist orthodontist portrait"></div><!-- IMG: specialist orthodontist portrait 4:5 -->
         </div>
       </div>
     </div>
@@ -175,7 +175,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <p style="max-width:760px;margin-bottom:44px">Every Invisalign journey at Orchard is guided by a friendly, highly qualified team. Get to know the specialists and therapists who will be looking after your smile.</p>
       <div class="cards">
         <article class="card reveal">
-          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-09.png" alt="Orthodontic therapist headshot" loading="lazy"></div></div><!-- IMG: orthodontic therapist headshot 4:3 -->
+          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-09.png" alt="Orthodontic therapist headshot"></div></div><!-- IMG: orthodontic therapist headshot 4:3 -->
           <div class="card__body">
             <span class="card__meta">Orthodontic Therapist</span>
             <h3>Haneta Rondonuwu</h3>
@@ -185,7 +185,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-20.png" alt="Specialist orthodontist" loading="lazy"></div></div>
+          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-20.png" alt="Specialist orthodontist"></div></div>
           <div class="card__body">
             <span class="card__meta">Specialist Orthodontist</span>
             <h3>Dr Pragati Agarwal</h3>
@@ -195,7 +195,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-09.png" alt="Orthodontic therapist headshot" loading="lazy"></div></div><!-- IMG: orthodontic therapist headshot 4:3 -->
+          <div class="card__media"><div class="ph ph--portrait"><img src="/images/inner/inset/inset-09.png" alt="Orthodontic therapist headshot"></div></div><!-- IMG: orthodontic therapist headshot 4:3 -->
           <div class="card__body">
             <span class="card__meta">Orthodontic Therapist</span>
             <h3>Sara Mendes</h3>
@@ -220,7 +220,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <p style="max-width:760px;margin-bottom:44px">Advice, insights and patient stories from our specialist team — everything you need to feel confident about starting your Invisalign journey.</p>
       <div class="cards cards--2">
         <article class="card reveal">
-          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-10.png" alt="Happy family outdoors" loading="lazy"></div></div><!-- IMG: happy family outdoors 16:9 -->
+          <div class="card__media"><div class="ph"><img src="/images/inner/inset/inset-10.png" alt="Happy family outdoors"></div></div><!-- IMG: happy family outdoors 16:9 -->
           <div class="card__body">
             <span class="card__meta">02.10.2025</span>
             <h3>Is Invisalign right for you? What to consider before you start.</h3>
@@ -229,7 +229,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
           </div>
         </article>
         <article class="card reveal">
-          <div class="card__media"><div class="ph ph--dark"><img src="/images/inner/inset/inset-17.png" alt="Orchard Orthodontics clinic" loading="lazy"></div></div>
+          <div class="card__media"><div class="ph ph--dark"><img src="/images/inner/inset/inset-17.png" alt="Orchard Orthodontics clinic"></div></div>
           <div class="card__body">
             <span class="card__meta">02.10.2025</span>
             <h3>Caring for your aligners: simple habits for a healthier smile.</h3>
@@ -254,8 +254,8 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <div class="inba__grid">
         <div class="reveal">
           <div class="ba">
-            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-12.png" alt="Patient smile after Invisalign treatment" loading="lazy"></div><!-- IMG: after smile close-up 4:3 -->
-            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-11.png" alt="Patient smile before Invisalign treatment" loading="lazy"></div><!-- IMG: before smile close-up 4:3 -->
+            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-12.png" alt="Patient smile after Invisalign treatment"></div><!-- IMG: after smile close-up 4:3 -->
+            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-11.png" alt="Patient smile before Invisalign treatment"></div><!-- IMG: before smile close-up 4:3 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
             <div class="inba__handle"><span>‹ ›</span></div>
@@ -264,8 +264,8 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
         <div class="reveal">
           <div class="ba">
-            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-14.png" alt="Patient smile after Invisalign and bonding" loading="lazy"></div><!-- IMG: after smile close-up 4:3 -->
-            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-13.png" alt="Patient smile before Invisalign and bonding" loading="lazy"></div><!-- IMG: before smile close-up 4:3 -->
+            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-14.png" alt="Patient smile after Invisalign and bonding"></div><!-- IMG: after smile close-up 4:3 -->
+            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-13.png" alt="Patient smile before Invisalign and bonding"></div><!-- IMG: before smile close-up 4:3 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
             <div class="inba__handle"><span>‹ ›</span></div>
@@ -274,8 +274,8 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
         <div class="reveal">
           <div class="ba">
-            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-12.png" alt="Patient smile after clear aligner treatment" loading="lazy"></div><!-- IMG: after smile close-up 4:3 -->
-            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-11.png" alt="Patient smile before clear aligner treatment" loading="lazy"></div><!-- IMG: before smile close-up 4:3 -->
+            <div class="ph" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-12.png" alt="Patient smile after clear aligner treatment"></div><!-- IMG: after smile close-up 4:3 -->
+            <div class="ph ba__before" style="position:absolute;inset:0"><img src="/images/inner/inset/inset-11.png" alt="Patient smile before clear aligner treatment"></div><!-- IMG: before smile close-up 4:3 -->
             <span class="ba__tag ba__tag--b">Before</span>
             <span class="ba__tag ba__tag--a">After</span>
             <div class="inba__handle"><span>‹ ›</span></div>
@@ -338,15 +338,15 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== DR VIDEO REELS (dark) ===================== -->
   <section class="reels">
-    <div class="reels__bg ph ph--dark"><img src="/images/inner/inset/inset-19.png" alt="" loading="lazy"></div>
+    <div class="reels__bg ph ph--dark"><img src="/images/inner/inset/inset-19.png" alt=""></div>
     <div class="container">
       <span class="eyebrow reveal">Dr Videos Reels</span>
       <h2 class="reveal">What to Know<br><strong>Before Starting Treatment</strong></h2>
       <div class="reels__grid" data-carousel>
-        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-15.png" alt="Orthodontist video reel" loading="lazy"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-16.png" alt="Orthodontist video reel" loading="lazy"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-15.png" alt="Orthodontist video reel" loading="lazy"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-16.png" alt="Orthodontist video reel" loading="lazy"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-15.png" alt="Orthodontist video reel"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-16.png" alt="Orthodontist video reel"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-15.png" alt="Orthodontist video reel"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><div class="ph ph--dark" style="position:absolute;inset:0;border-radius:16px"><img src="/images/inner/inset/inset-16.png" alt="Orthodontist video reel"></div><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
       </div>
       <div class="reels__foot">
         <a class="btn btn--white" href="#">Discover More</a>
@@ -359,7 +359,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><div class="ph ph--dark" style="min-height:420px"><img src="/images/inner/inset/inset-18.png" alt="Happy Invisalign patient on the phone in London" loading="lazy"></div></div><!-- IMG: happy Invisalign patient on phone in London 4:5 -->
+        <div class="cta__media"><img src="/images/inner/inset/inset-18.png" alt="Happy Invisalign patient on the phone in London"></div><!-- IMG: happy Invisalign patient on phone in London 4:5 -->
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Start your<br><strong>Invisalign journey</strong></h2>

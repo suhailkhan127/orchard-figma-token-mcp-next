@@ -14,7 +14,7 @@ const MapsArrow = () => (
 export default function VisitMap() {
   return (
     <section className="visit">
-      <div className="visit__bg"><img src="/images/home/visit-bg.png" alt="" loading="lazy" /></div>
+      <div className="visit__bg"><img src="/images/home/visit-bg.png" alt="" /></div>
       <div className="container visit__grid">
         <div className="reveal reveal--left">
           <span className="eyebrow">Find us</span>
@@ -55,7 +55,7 @@ export default function VisitMap() {
           </div>
         </div>
         <div className="reveal reveal--right visit__map">
-          <iframe title="Orchard Orthodontics location map" loading="lazy" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed" />
+          <iframe title="Orchard Orthodontics location map" src="https://www.google.com/maps?q=114-118+Cherry+Orchard+Road+Croydon+CR0+6BA&output=embed" />
           <img className="visit__pin" src="/images/map-pin.svg" alt="" />
         </div>
       </div>

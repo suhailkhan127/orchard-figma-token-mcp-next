@@ -27,7 +27,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
       <div class="cform__card reveal">
         <div class="cform__media">
           <!-- IMG: smiling patient using phone outdoors in London, portrait 4:5 -->
-          <div class="ph ph--dark"><img src="/images/inner/contact/contact-04.png" alt="Smiling patient using her phone on a London street" loading="lazy"></div>
+          <div class="ph ph--dark"><img src="/images/inner/contact/contact-04.png" alt="Smiling patient using her phone on a London street"></div>
         </div>
         <div class="cform__body">
           <span class="eyebrow">Send us a message</span>

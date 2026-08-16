@@ -11,7 +11,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== PROS TRUST (Declan Rice) ===================== -->
   <section class="pros">
-    <div class="pros__bg"><img src="/images/home/pros-patients.png" alt="" loading="lazy"></div>
+    <div class="pros__bg"><img src="/images/home/pros-patients.png" alt=""></div>
     <div class="container">
       <div class="pros__card reveal">
         <span class="eyebrow">Book a Free Consultation</span>
@@ -25,7 +25,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== AWARDS + VIDEO TESTIMONIAL ===================== -->
   <section class="awards">
-    <div class="awards__bg"><img src="/images/home/awards.png" alt="" loading="lazy"></div>
+    <div class="awards__bg"><img src="/images/home/awards.png" alt=""></div>
     <div class="container awards__head reveal">
       <h2>Best Patient Care <strong>Winners</strong></h2>
       <p>We are delighted to announce that we have won best patient care at the 2025 Private Dentistry Awards.</p>
@@ -39,14 +39,14 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <span class="eyebrow">Video Testimonial</span>
         <h3>Real patients, <strong>real results</strong></h3>
         <div class="vtest__grid" data-carousel>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/keshika.jpg" alt="Keshika" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Keshika</b><span>Invisalign®</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/jacqueline.jpg" alt="Jacqueline" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Jacqueline</b><span>Invisalign®</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/ryan.jpg" alt="Ryan" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Ryan</b><span>Damon Braces</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/composite-bonding.jpg" alt="Composite bonding result" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Composite Bonding</b><span>Cosmetic Bonding</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/keshika.jpg" alt="Keshika" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Keshika</b><span>Invisalign®</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/jacqueline.jpg" alt="Jacqueline" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Jacqueline</b><span>Invisalign®</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/ryan.jpg" alt="Ryan" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Ryan</b><span>Damon Braces</span></figcaption></figure>
-          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/composite-bonding.jpg" alt="Composite bonding result" loading="lazy"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Composite Bonding</b><span>Cosmetic Bonding</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/keshika.jpg" alt="Keshika"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Keshika</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/jacqueline.jpg" alt="Jacqueline"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Jacqueline</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/ryan.jpg" alt="Ryan"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Ryan</b><span>Damon Braces</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/composite-bonding.jpg" alt="Composite bonding result"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Composite Bonding</b><span>Cosmetic Bonding</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/keshika.jpg" alt="Keshika"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Keshika</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/jacqueline.jpg" alt="Jacqueline"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Jacqueline</b><span>Invisalign®</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/ryan.jpg" alt="Ryan"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Ryan</b><span>Damon Braces</span></figcaption></figure>
+          <figure class="vcard"><div class="vcard__thumb"><img src="/images/home/testi/composite-bonding.jpg" alt="Composite bonding result"><button class="playbtn" aria-label="Play video"></button><span class="playbtn__label">Play Video</span></div><figcaption><b>Composite Bonding</b><span>Cosmetic Bonding</span></figcaption></figure>
         </div>
         <div class="vtest__foot">
           <a class="btn btn--white" href="/smile-gallery">Discover More</a>
@@ -92,7 +92,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== WHY CHOOSE (dark icon grid) ===================== -->
   <section class="why">
-    <div class="why__bg"><img src="/images/home/why-bg.png" alt="" loading="lazy"></div>
+    <div class="why__bg"><img src="/images/home/why-bg.png" alt=""></div>
     <div class="container">
       <h2 class="text-center reveal">Why Choose <strong>Orchard Orthodontics</strong></h2>
       <div class="why__grid">
@@ -111,7 +111,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="sadiq">
     <div class="container">
       <div class="sadiq__card reveal">
-        <div class="sadiq__bg"><img src="/images/home/sadiq-trust.png" alt="Dr Sadiq with schoolchildren in The Gambia" loading="lazy"></div>
+        <div class="sadiq__bg"><img src="/images/home/sadiq-trust.png" alt="Dr Sadiq with schoolchildren in The Gambia"></div>
         <div class="sadiq__body">
           <span class="eyebrow">Care Beyond the Chair</span>
           <h2>The Sadiq Trust</h2>
@@ -135,29 +135,29 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         </div>
         <a class="btn btn--navy" href="/pricing">View Costs</a>
       </div>
-      <div class="pricing__media reveal reveal--right"><img src="/images/home/pricing-patient.png" alt="Orthodontic patient" loading="lazy"></div>
+      <div class="pricing__media reveal reveal--right"><img src="/images/home/pricing-patient.png" alt="Orthodontic patient"></div>
     </div>
   </section>
 
   <!-- ===================== DR VIDEO REELS (dark) ===================== -->
   <section class="reels">
-    <div class="reels__bg"><img src="/images/home/reels-bg.png" alt="" loading="lazy"></div>
+    <div class="reels__bg"><img src="/images/home/reels-bg.png" alt=""></div>
     <div class="container">
       <span class="eyebrow reveal">Dr Videos Reels</span>
       <h2 class="reveal">What to Know<br><strong>Before Starting Treatment</strong></h2>
       <div class="reels__grid" data-carousel>
-        <div class="reel"><img src="/images/home/reels/reel-01.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-02.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-03.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-04.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-05.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-06.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-07.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-08.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-09.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-10.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-11.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
-        <div class="reel"><img src="/images/home/reels/reel-12.jpg" alt="" loading="lazy"><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-01.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-02.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-03.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-04.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-05.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-06.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-07.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-08.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-09.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-10.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-11.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
+        <div class="reel"><img src="/images/home/reels/reel-12.jpg" alt=""><button class="playbtn" aria-label="Play reel"></button><span class="playbtn__label">Play Video</span></div>
       </div>
       <div class="reels__foot">
         <a class="btn btn--white" href="#">Discover More</a>
@@ -175,7 +175,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <p>60 years of combined specialist experience in orthodontics.</p>
         <a class="btn btn--navy" href="/meet-team">Meet the Team</a>
       </div>
-      <div class="docs__media reveal reveal--right"><img src="/images/home/doctors.png" alt="Dr Sadiq, specialist orthodontist" loading="lazy"></div>
+      <div class="docs__media reveal reveal--right"><img src="/images/home/doctors.png" alt="Dr Sadiq, specialist orthodontist"></div>
     </div>
   </section>
 
@@ -183,7 +183,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><img src="/images/home/cta-img.png" alt="Happy Orchard Orthodontics patient in London" loading="lazy"></div>
+        <div class="cta__media"><img src="/images/home/cta-img.png" alt="Happy Orchard Orthodontics patient in London"></div>
         <div class="cta__body">
           <span class="eyebrow">Book a Free Consultation</span>
           <h2>Ready to start your<br><strong>smile journey?</strong></h2>

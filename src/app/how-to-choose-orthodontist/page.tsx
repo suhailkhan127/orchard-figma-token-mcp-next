@@ -18,7 +18,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
         </div>
         <div class="inset-hero__media reveal reveal--right">
-          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-01.png" alt="Two specialist orthodontists treating a patient in the clinic" loading="lazy">
+          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-01.png" alt="Two specialist orthodontists treating a patient in the clinic">
           <div class="ph ph--dark"></div><!-- IMG: two specialist orthodontists treating a patient in clinic 4:3 -->
         </div>
       </div>
@@ -48,7 +48,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           </div>
         </div>
         <div class="sbs__media">
-          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-02.png" alt="Hand holding an open case with a clear aligner" loading="lazy">
+          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-02.png" alt="Hand holding an open case with a clear aligner">
           <div class="ph"></div><!-- IMG: hand holding a clear aligner case 1:1 -->
         </div>
       </div>
@@ -68,7 +68,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           </div>
         </div>
         <div class="sbs__media">
-          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-03.png" alt="Smiling Orchard Orthodontics patient" loading="lazy">
+          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-03.png" alt="Smiling Orchard Orthodontics patient">
           <div class="ph"></div><!-- IMG: smiling patient portrait 1:1 -->
         </div>
       </div>
@@ -83,7 +83,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
           </div>
         </div>
         <div class="sbs__media">
-          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-04.png" alt="Hand holding an open case with a clear aligner" loading="lazy">
+          <img src="/images/inner/how-to-choose-orthodontist/how-to-choose-orthodontist-04.png" alt="Hand holding an open case with a clear aligner">
           <div class="ph"></div><!-- IMG: hand holding a clear aligner case 1:1 -->
         </div>
       </div>
@@ -94,7 +94,7 @@ const CONTENT = `<!-- ===================== INSET HERO ===================== -->
   <section class="cta">
     <div class="container">
       <div class="cta__card reveal">
-        <div class="cta__media"><img src="/images/home/cta-img.png" alt="Patient consultation with a specialist orthodontist" loading="lazy"></div>
+        <div class="cta__media"><img src="/images/home/cta-img.png" alt="Patient consultation with a specialist orthodontist"></div>
         <div class="cta__body">
           <span class="eyebrow">Ready to begin?</span>
           <h2>Book your free consultation</h2>
