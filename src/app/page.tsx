@@ -181,7 +181,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
 export default function Page() {
   return (
-    <PageShell active="" solid={false} pageClass="">
+    <PageShell active="" solid={false} pageClass="" mapClass="home_map">
       <div dangerouslySetInnerHTML={{ __html: CONTENT }} />
     </PageShell>
   );

@@ -11,9 +11,9 @@ const MapsArrow = () => (
   <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><path d="M7 17L17 7M9 7h8v8" /></svg>
 );
 
-export default function VisitMap() {
+export default function VisitMap({ className = "" }: { className?: string }) {
   return (
-    <section className="visit">
+    <section className={"visit" + (className ? " " + className : "")}>
       <div className="visit__bg"><img src="/images/home/visit-bg.png" alt="" /></div>
       <div className="container visit__grid">
         <div className="reveal reveal--left">

@@ -12,16 +12,18 @@ type Props = {
   solid?: boolean;
   /** body-scoping class for page-specific CSS, e.g. "page-inset" */
   pageClass?: string;
+  /** extra class on the shared Visit/map section, e.g. "home_map" on the homepage */
+  mapClass?: string;
 };
 
-export default function PageShell({ children, active = "", solid = true, pageClass = "" }: Props) {
+export default function PageShell({ children, active = "", solid = true, pageClass = "", mapClass = "" }: Props) {
   return (
     <>
       <a className="skip-link" href="#main">Skip to content</a>
       <Header active={active} solid={solid} />
       <MobileMenu />
       <main id="main" className={pageClass}>{children}</main>
-      <VisitMap />
+      <VisitMap className={mapClass} />
       <Footer />
       <Widgets />
     </>
