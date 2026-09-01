@@ -10,22 +10,18 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   </section>
 
   <!-- ===================== PROS TRUST (Declan Rice) ===================== -->
-  <div class="container-lg">
   <section class="pros">
-    <div class="pros__bg"><img src="/images/home/pros-patients.png" alt=""></div>
-    <div class="container">
-      <div class="pros__card reveal">
-        <span class="eyebrow">Book a Free Consultation</span>
-        <h2>When The Pros Trust Us,<br><strong>So Can You.</strong></h2>
-        <p>England and Arsenal star Declan Rice entrusted us with his smile. Experience the same specialist orthodontic care.</p>
-        <div class="pros__foot">
-          <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
-        </div>
-        <div class="pros__attr"><b>Declan Rice</b><span>Premier League Footballer</span></div>
+    <div class="container-lg pros__inner">
+      <div class="pros__celebrity"><h6>Declan Rice</h6><p>Premier League Footballer</p></div>
+      <div class="pros__img"><img src="/images/home/home-book-sec-img.jpg" alt="Declan Rice"></div>
+      <div class="pros__txt">
+        <h3>Book a Free Consultation</h3>
+        <h2>When the pros <strong>trust us,<br>so can you.</strong></h2>
+        <p>When elite athletes choose who to trust with their smile, standards matter. England and Arsenal star Declan Rice chose Orchard Orthodontics — and every patient receives the same meticulous, specialist-led care.</p>
+        <a class="btn btn--green" href="/booking"><span>Book a Free Consultation</span></a>
       </div>
     </div>
   </section>
-  </div>
 
   <!-- ===================== AWARDS + VIDEO TESTIMONIAL ===================== -->
   <section class="awards">

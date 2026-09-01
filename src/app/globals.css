@@ -412,18 +412,19 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 /* ==========================================================================
    HOME — Pros trust (Declan Rice)
    ========================================================================== */
-.pros { position: relative; padding: 120px 0; background: var(--c01); overflow: hidden; border-radius: 16px; }
-.pros__bg { position: absolute; inset: 0; z-index: 0; }
-.pros__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,30,41,.35) 0%, rgba(16,30,41,.6) 100%); }
-.pros .container { position: relative; z-index: 2; }
-.pros__card { max-width: 760px; margin-inline: auto; text-align: center; padding: 56px; color: #fff; }
-.pros__card .eyebrow { color: var(--c04); display: block; margin-bottom: 16px; }
-.pros__card h2 { color: #fff; margin-bottom: 20px; }
-.pros__card p { color: rgba(255,255,255,.82); margin: 0 auto 28px; max-width: 520px; }
-.pros__foot { justify-content: space-between; align-items: center; gap: 24px; margin-top: 32px; }
-.pros__attr { margin: 0; text-align: left; position: absolute; bottom: 56px; right: 10%; }
-.pros__attr b { display: block; font-size: 18px; }
-.pros__attr span { font-size: 13px; text-transform: uppercase; letter-spacing: .5px; color: rgba(255,255,255,.65); }
+.pros { position: relative; isolation: isolate; margin: -100px 0; z-index: 1; }
+.pros::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: calc(100% - 200px); z-index: -1; background: url(/images/home/home-book-sec-back-img.jpg) center / cover no-repeat; }
+.pros__inner { position: relative; border-radius: 16px; overflow: hidden; }
+.pros__celebrity { position: absolute; bottom: 120px; right: 10%; }
+.pros__celebrity * { color: #fff; }
+.pros__celebrity h6 { margin: 0; }
+.pros__celebrity p { font-size: 12px; }
+.pros__img { position: absolute; inset: 0; z-index: -1; }
+.pros__img img { width: 100%; height: 100%; object-fit: cover; }
+.pros__img::before { content: ""; position: absolute; left: 0; bottom: 0; width: 100%; height: 70%; border-radius: 16px; background: linear-gradient(0deg, #263542 0%, #263542 28.85%, rgba(38,53,66,0.6) 57.69%, rgba(38,53,66,0) 100%); }
+.pros__txt { padding: 540px 0 120px; text-align: center; max-width: 560px; margin: 0 auto; }
+.pros__txt *:not(.btn, span) { color: #fff; }
+.pros__txt .btn { margin-top: 48px; }
 
 /* Awards + video testimonial */
 .awards { position: relative; padding: 100px 0 120px; background: #0f1a24; color: #fff; overflow: hidden; }
@@ -529,9 +530,10 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .why__grid .whyitem { width: calc(50% - 16px); }
   .treat__grid, .pricing__grid, .docs__grid, .cta__card { grid-template-columns: 1fr; }
   .whyitem--down { transform: none; }
-  .pros__card { padding: 40px; }
-  .pros__foot { flex-direction: column; gap: 18px; }
-  .pros__attr { text-align: center; }
+  .pros { margin: -20px 0; }
+  .pros__inner { border-radius: 0; }
+  .pros__img::before { border-radius: 0; }
+  .pros__txt { padding: 290px 0 64px; max-width: 360px; }
   .vtest, .cta__body { padding: 40px 20px; }
   .cta__media { min-height: 280px; }
 }
@@ -540,6 +542,12 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .pricing__feats { gap: 20px; }
   .treat__tabs { flex-wrap: wrap; gap: 16px; }
   .treat__tab { font-size: 14px; }
+  .pros { margin: 0; }
+  .pros::before { background: #263542; transform: none; top: auto; bottom: 0; height: 100%; }
+  .pros__celebrity { bottom: auto; top: 200px; right: 24px; width: 100px; }
+  .pros__celebrity h6 { font-size: 12px; }
+  .pros__celebrity p { font-size: 10px; line-height: 1; }
+  .pros__img { height: 45%; }
 }
 
 /* ==========================================================================
