@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: 400; line-height: 1.2; color: var(--c01); 
 
 .eyebrow, .h2-label {
   font-size: 16px; font-weight: 500; line-height: 1; letter-spacing: -0.16px;
-  text-transform: uppercase; color: var(--c03);
+  text-transform: uppercase;
 }
 
 .h3, h2, h3 {
@@ -249,7 +249,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
    Hero (shared shell) — full-bleed photo + navy overlay
    ========================================================================== */
 .hero {
-  position: relative; min-height: 720px; display: grid; place-items: center;
+  position: relative; min-height: 956px; display: grid; place-items: center;
   text-align: center; color: #fff; padding: calc(var(--header-h) + 40px) 0 80px;
   overflow: hidden; background: var(--c01);
 }
@@ -269,7 +269,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .visit::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(28,48,66,.86), rgba(20,36,50,.94)); }
 .visit > .container { position: relative; z-index: 2; }
 .visit__grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
-.visit .eyebrow { color: var(--c04); }
+.visit .eyebrow { margin-bottom: 30px; display: block; }
 .visit h2 { color: #fff; margin-bottom: 20px; }
 .visit__sub { color: rgba(255,255,255,.82); max-width: 420px; margin-bottom: 28px; }
 
@@ -407,15 +407,16 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 /* ==========================================================================
    HOME — Pros trust (Declan Rice)
    ========================================================================== */
-.pros { position: relative; padding: 120px 0; background: var(--c01); overflow: hidden; }
+.pros { position: relative; padding: 120px 0; background: var(--c01); overflow: hidden; border-radius: 16px; }
 .pros__bg { position: absolute; inset: 0; z-index: 0; }
-.pros__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(20,34,48,.92) 40%, rgba(20,34,48,.35)); }
+.pros__bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(16,30,41,.35) 0%, rgba(16,30,41,.6) 100%); }
 .pros .container { position: relative; z-index: 2; }
-.pros__card { max-width: 640px; background: rgba(24,40,55,.86); backdrop-filter: blur(4px); border-radius: 24px; padding: 56px; color: #fff; }
+.pros__card { max-width: 760px; margin-inline: auto; text-align: center; padding: 56px; color: #fff; }
 .pros__card .eyebrow { color: var(--c04); display: block; margin-bottom: 16px; }
 .pros__card h2 { color: #fff; margin-bottom: 20px; }
-.pros__card p { color: rgba(255,255,255,.82); margin-bottom: 28px; }
-.pros__attr { margin-top: 24px; }
+.pros__card p { color: rgba(255,255,255,.82); margin: 0 auto 28px; max-width: 520px; }
+.pros__foot { justify-content: space-between; align-items: center; gap: 24px; margin-top: 32px; }
+.pros__attr { margin: 0; text-align: left; position: absolute; bottom: 56px; right: 10%; }
 .pros__attr b { display: block; font-size: 18px; }
 .pros__attr span { font-size: 13px; text-transform: uppercase; letter-spacing: .5px; color: rgba(255,255,255,.65); }
 
@@ -427,7 +428,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .awards__head h2 { color: #fff; margin-bottom: 16px; }
 .awards__head p { color: rgba(255,255,255,.8); margin-bottom: 28px; }
 
-.vtest { padding: 150px 100px; margin-top: -140px; z-index: 1; position: relative; border-radius: 16px; background: url(/images/home/home-video-testi-back.jpg) center / cover no-repeat; }
+.vtest { padding: 150px 100px; margin-top: -140px; z-index: 1; position: relative; border-radius: 16px; overflow: hidden; background: url(/images/home/home-video-testi-back.jpg) center / cover no-repeat; }
 .vtest::before { content: ""; position: absolute; inset: 0; width: 100%; height: 100%; opacity: .9; background: linear-gradient(180deg, #25435c 0%, #101e29 100%); z-index: -1; }
 .vtest .eyebrow { color: var(--c04); display: block; margin-bottom: 12px; }
 .vtest h3 { color: #fff; margin-bottom: 36px; }
@@ -461,6 +462,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .treat__img.is-active { opacity: 1; }
 .pricing { position: relative; }
 .pricing::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url(/images/home/pricing.png) center / cover no-repeat; }
+.docs { background: linear-gradient(180deg, rgba(67,93,117,0.05) 0%, rgba(67,93,117,0.12) 100%), url(/images/home/meet-dr-back-img.jpg) center / cover no-repeat; }
 .treat__body h2, .pricing__body h2, .docs__body h2 { margin: 16px 0 20px; }
 .treat__body p, .pricing__body p, .docs__body p { color: var(--ct); margin-bottom: 32px; max-width: 460px; }
 .treat__media, .pricing__media { border-radius: var(--radius-card); aspect-ratio: 1/1; }
@@ -507,11 +509,12 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 @media (max-width: 768px){ .sadiq{ padding-bottom: 0; } .sadiq__card{ min-height: 620px; } .sadiq__body{ padding: 0 24px 40px; } }
 
 /* CTA band */
-.cta { padding: 0 0 110px; }
-.cta__card { display: grid; grid-template-columns: 1fr 1.15fr; background: var(--c01); border-radius: var(--radius-card); overflow: hidden; color: #fff; }
+.cta { }
+.cta__card { display: grid; grid-template-columns: 1fr 1.15fr; position: relative; padding: 120px; background: url(/images/home/book-sec-back-img.jpg) center / cover no-repeat; border-radius: var(--radius-card); overflow: hidden; color: #fff; }
+.cta__card::before { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 16px; opacity: 0.9; background: linear-gradient(180deg, #25435C 0%, #101E29 100%); }
 .cta__media { min-height: 420px; }
 .cta__body { padding: 120px; align-self: center; }
-.cta__body .eyebrow { color: var(--c04); display: block; margin-bottom: 14px; }
+.cta__body .eyebrow { display: block; margin-bottom: 14px; }
 .cta__body h2 { color: #fff; margin-bottom: 18px; }
 .cta__body p { color: rgba(255,255,255,.82); margin-bottom: 30px; }
 
@@ -522,6 +525,8 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .treat__grid, .pricing__grid, .docs__grid, .cta__card { grid-template-columns: 1fr; }
   .whyitem--down { transform: none; }
   .pros__card { padding: 40px; }
+  .pros__foot { flex-direction: column; gap: 18px; }
+  .pros__attr { text-align: center; }
   .vtest, .cta__body { padding: 40px 20px; }
   .cta__media { min-height: 280px; }
 }

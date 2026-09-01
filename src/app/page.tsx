@@ -10,6 +10,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   </section>
 
   <!-- ===================== PROS TRUST (Declan Rice) ===================== -->
+  <div class="container-lg">
   <section class="pros">
     <div class="pros__bg"><img src="/images/home/pros-patients.png" alt=""></div>
     <div class="container">
@@ -17,11 +18,14 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <span class="eyebrow">Book a Free Consultation</span>
         <h2>When The Pros Trust Us,<br><strong>So Can You.</strong></h2>
         <p>England and Arsenal star Declan Rice entrusted us with his smile. Experience the same specialist orthodontic care.</p>
-        <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
+        <div class="pros__foot">
+          <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
+        </div>
         <div class="pros__attr"><b>Declan Rice</b><span>Premier League Footballer</span></div>
       </div>
     </div>
   </section>
+  </div>
 
   <!-- ===================== AWARDS + VIDEO TESTIMONIAL ===================== -->
   <section class="awards">
@@ -166,7 +170,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
 
   <!-- ===================== CTA BAND ===================== -->
   <section class="cta">
-    <div class="container">
+    <div class="container-lg">
       <div class="cta__card reveal">
         <div class="cta__media"><img src="/images/home/cta-img.png" alt="Happy Orchard Orthodontics patient in London"></div>
         <div class="cta__body">
