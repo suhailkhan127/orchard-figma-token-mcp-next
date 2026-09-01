@@ -32,7 +32,7 @@ export default function Header({ active = "", solid = true }: Props) {
           <div className="navbar__bottom">
             <nav className="nav" aria-label="Primary">
               <div className="nav__item has-dropdown">
-                <a className={cls("treatments")} href="#">Treatments <Caret /></a>
+                <a className={cls("treatments")} href="#">Treatments <img className="caret" src="/images/icons/arrow-down.svg" alt="" /></a>
                 <div className="dropdown">
                   <Link href="/how-to-choose-orthodontist">Invisalign®</Link><Link href="/inset">Damon Braces</Link><Link href="/inset">NHS Braces</Link><Link href="/inset">Carriere Motion</Link><Link href="/how-remote-monitoring-works">AI Monitoring</Link><Link href="/inset">Cosmetic Dentistry</Link>
                 </div>
@@ -40,11 +40,11 @@ export default function Header({ active = "", solid = true }: Props) {
               <div className="nav__item"><Link className={cls("pricing")} href="/pricing">Pricing</Link></div>
               <div className="nav__item"><Link className={cls("smile-gallery")} href="/smile-gallery">Smile Gallery</Link></div>
               <div className="nav__item has-dropdown">
-                <a className={cls("for-patients")} href="#">For Patients <Caret /></a>
+                <a className={cls("for-patients")} href="#">For Patients <img className="caret" src="/images/icons/arrow-down.svg" alt="" /></a>
                 <div className="dropdown"><Link href="/booking">New Patients</Link><Link href="/pricing">Finance Options</Link><Link href="/inset">FAQs</Link></div>
               </div>
               <div className="nav__item has-dropdown">
-                <a className={cls("about")} href="#">About Us <Caret /></a>
+                <a className={cls("about")} href="#">About Us <img className="caret" src="/images/icons/arrow-down.svg" alt="" /></a>
                 <div className="dropdown"><Link href="/meet-team">Meet the Team</Link><Link href="/meet-team">Award Winning Team</Link><Link href="/blog">Blog</Link></div>
               </div>
               <div className="nav__item"><Link className={cls("contact")} href="/contact">Contact Us</Link></div>

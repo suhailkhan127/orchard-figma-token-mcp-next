@@ -16,8 +16,8 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
       <div class="pros__img"><img src="/images/home/home-book-sec-img.jpg" alt="Declan Rice"></div>
       <div class="pros__txt">
         <h3>Book a Free Consultation</h3>
-        <h2>When the pros <strong>trust us,<br>so can you.</strong></h2>
-        <p>When elite athletes choose who to trust with their smile, standards matter. England and Arsenal star Declan Rice chose Orchard Orthodontics — and every patient receives the same meticulous, specialist-led care.</p>
+        <h2>When the pros trust us,<br><strong>so can you.</strong></h2>
+        <p>England and Arsenal star Declan Rice entrusted us with his smile. Experience the same specialist orthodontic care.</p>
         <a class="btn btn--green" href="/booking"><span>Book a Free Consultation</span></a>
       </div>
     </div>
@@ -27,6 +27,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="awards">
     <div class="awards__bg"><img src="/images/home/awards.png" alt=""></div>
     <div class="container awards__head reveal">
+      <img class="awards__badge" src="/images/home/award-badge.png" alt="Private Dentistry Awards badge">
       <h2>Best Patient Care <strong>Winners</strong></h2>
       <p>We are delighted to announce that we have won best patient care at the 2025 Private Dentistry Awards.</p>
       <a class="btn btn--white" href="#">Discover More</a>
