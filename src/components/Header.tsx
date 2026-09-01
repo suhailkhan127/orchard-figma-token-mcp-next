@@ -18,16 +18,16 @@ export default function Header({ active = "", solid = true }: Props) {
           <div className="navbar__utility">
             <div className="langmenu">
               <button className="langmenu__toggle" aria-expanded="false" aria-haspopup="true">
-                <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><circle cx="12" cy="12" r="9" /><path d="M3 12h18M12 3c2.5 2.6 2.5 15.4 0 18M12 3c-2.5 2.6-2.5 15.4 0 18" /></svg>
+                <img className="ico" src="/images/icons/language.svg" alt="" />
                 Language <Caret />
               </button>
               <div className="langmenu__panel">
                 <a href="#">🇪🇸 Spanish</a><a href="#">🇵🇹 Portuguese</a><a href="#">🇸🇦 Arabic (Saudi Arabia)</a><a href="#">🇨🇳 Chinese (Mandarin)</a>
               </div>
             </div>
-            <Link href="/dentist-referral"><svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><circle cx="9" cy="8" r="3" /><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" /><circle cx="17" cy="8" r="2.2" /><path d="M15.5 14.3c2.4.6 4.5 2.7 4.5 5.7" /></svg> Dentist Referrals</Link>
-            <a href="#"><svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2}><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z" /></svg> Patient Info</a>
-            <a className="topbar__phone" href="tel:02086497500"><svg className="ico" viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1z" /></svg> 020 8649 7500</a>
+            <Link href="/dentist-referral"><img className="ico" src="/images/icons/dentist.svg" alt="" /> Dentist Referrals</Link>
+            <a href="#"><img className="ico" src="/images/icons/star.svg" alt="" /> Patient Info</a>
+            <a className="topbar__phone" href="tel:02086497500"><img className="ico" src="/images/icons/phone.svg" alt="" /> 020 8649 7500</a>
           </div>
           <div className="navbar__bottom">
             <nav className="nav" aria-label="Primary">

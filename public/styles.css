@@ -408,7 +408,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
    HOME — Pros trust (Declan Rice)
    ========================================================================== */
 .pros { position: relative; isolation: isolate; margin: -100px 0; z-index: 1; }
-.pros::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 100%; height: calc(100% - 200px); z-index: -1; background: url(/images/home/home-book-sec-back-img.jpg) center / cover no-repeat; }
+.pros::before { content: ""; position: absolute; left: 0; top: 100px; width: 100%; height: calc(100% - 190px); z-index: -1; background: url(/images/home/home-book-sec-back-img.jpg) center / cover no-repeat; }
 .pros__inner { position: relative; border-radius: 16px; overflow: hidden; }
 .pros__celebrity { position: absolute; bottom: 120px; right: 10%; }
 .pros__celebrity * { color: #fff; }
@@ -493,10 +493,11 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .feat p { font-size: 15px; margin: 0; }
 
 /* Reels (dark) */
-.reels { position: relative; padding: 110px 0; background: #0f1a24; color: #fff; overflow: hidden; }
-.reels__bg { position: absolute; inset: 0; z-index: 0; opacity: .3; }
+.reels { position: relative; padding: 160px 0; color: #fff; overflow: hidden; }
+.reels__bg { position: absolute; inset: 0; z-index: 0; }
+.reels::before { content: ""; position: absolute; inset: 0; z-index: 1; opacity: .9; background: linear-gradient(180deg, #25435c 0%, #101e29 100%); }
 .reels .container { position: relative; z-index: 2; }
-.reels .eyebrow { color: #fff; display: block; margin-bottom: 32px; }
+.reels .eyebrow { display: block; margin-bottom: 12px; }
 .reels h2 { color: #fff; margin-bottom: 44px; }
 .reels__grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 24px; }
 .reel { border-radius: 16px; aspect-ratio: 9/16; display: grid; place-items: center; position: relative; }
