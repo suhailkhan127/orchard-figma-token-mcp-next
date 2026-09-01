@@ -94,7 +94,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="why">
     <div class="why__bg"><img src="/images/home/why-bg.png" alt=""></div>
     <div class="container">
-      <h2 class="text-center reveal">Why Choose <strong>Orchard Orthodontics</strong></h2>
+      <h2 class="text-center reveal">Why Choose<br><strong>Orchard Orthodontics</strong></h2>
       <div class="why__grid">
         <div class="whyitem reveal"><img class="whyitem__ico" src="/images/icons/why-medal.svg" alt=""><p>Winner Of The British Orthodontic Society Gold Medal</p></div>
         <div class="whyitem whyitem--down reveal" data-delay="1"><img class="whyitem__ico" src="/images/icons/why-wallet.svg" alt=""><p>Affordable Payment Plans</p></div>
