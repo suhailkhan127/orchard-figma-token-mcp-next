@@ -4,7 +4,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   <section class="hero">
     <div class="hero__bg"><video autoplay muted loop playsinline preload="auto" poster="/images/home/hero-bg.png"><source src="/videos/orchard-hero-bg-video.mp4" type="video/mp4"></video></div>
     <div class="hero__inner container">
-      <h1>Your Smile Deserves <strong>a Specialist</strong></h1>
+      <h1>Your Smile Deserves<br><strong>a Specialist</strong></h1>
       <a class="btn btn--green" href="/booking">Book a Free Consultation</a>
     </div>
   </section>
@@ -34,7 +34,7 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
   </section>
 
   <!-- ===================== VIDEO TESTIMONIAL (moved out of .awards) ===================== -->
-  <div class="container">
+  <div class="container-lg">
       <div class="vtest reveal">
         <span class="eyebrow">Video Testimonial</span>
         <h3>Real patients, <strong>real results</strong></h3>
@@ -103,21 +103,6 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
         <div class="whyitem reveal" data-delay="2"><img class="whyitem__ico" src="/images/icons/why-face.svg" alt=""><p>30,000 Smiles Transformed Over 19 Years</p></div>
         <div class="whyitem whyitem--down reveal" data-delay="3"><img class="whyitem__ico" src="/images/icons/why-bolt.svg" alt=""><p>Start Immediately</p></div>
         <div class="whyitem reveal" data-delay="3"><img class="whyitem__ico" src="/images/icons/why-map.svg" alt=""><p>Convenient Locations In London (Near Train Stations)</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===================== THE SADIQ TRUST (Rev06 care) ===================== -->
-  <section class="sadiq">
-    <div class="container">
-      <div class="sadiq__card reveal">
-        <div class="sadiq__bg"><img src="/images/home/sadiq-trust.png" alt="Dr Sadiq with schoolchildren in The Gambia"></div>
-        <div class="sadiq__body">
-          <span class="eyebrow">Care Beyond the Chair</span>
-          <h2>The Sadiq Trust</h2>
-          <p>Founded by Dr Sadiq in October 2023, The Sadiq Trust extends Orchard's commitment to care beyond clinical treatment. The charity supports vulnerable communities across multiple countries, with a particular focus on children with special needs and disabilities. Through the development of specialist education facilities – including a dedicated school in The Gambia – the Trust works to provide access, dignity, and opportunity where it is often lacking.</p>
-          <a class="btn btn--white" href="#">Learn More About the Sadiq Trust</a>
-        </div>
       </div>
     </div>
   </section>

@@ -355,6 +355,21 @@ const CONTENT = `<!-- ===================== HERO ===================== -->
     </div>
   </section>
 
+  <!-- ===================== THE SADIQ TRUST (Rev06 care) ===================== -->
+  <section class="sadiq">
+    <div class="container">
+      <div class="sadiq__card reveal">
+        <div class="sadiq__bg"><img src="/images/home/sadiq-trust.png" alt="Dr Sadiq with schoolchildren in The Gambia"></div>
+        <div class="sadiq__body">
+          <span class="eyebrow">Care Beyond the Chair</span>
+          <h2>The Sadiq Trust</h2>
+          <p>Founded by Dr Sadiq in October 2023, The Sadiq Trust extends Orchard's commitment to care beyond clinical treatment. The charity supports vulnerable communities across multiple countries, with a particular focus on children with special needs and disabilities. Through the development of specialist education facilities – including a dedicated school in The Gambia – the Trust works to provide access, dignity, and opportunity where it is often lacking.</p>
+          <a class="btn btn--white" href="#">Learn More About the Sadiq Trust</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== CTA BAND ===================== -->
   <section class="cta">
     <div class="container">

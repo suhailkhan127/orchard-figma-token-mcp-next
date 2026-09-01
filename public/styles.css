@@ -73,6 +73,7 @@ input, textarea, select { font-family: inherit; font-size: inherit; }
 
 /* ---------- Layout helpers ---------- */
 .container { width: min(100% - 48px, var(--container)); margin-inline: auto; }
+.container-lg { width: min(100% - 48px, 1520px); margin-inline: auto; }
 .section { padding-block: 160px; }
 .text-center { text-align: center; }
 
@@ -152,7 +153,8 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 /* main row — logo left, right column stacks utility (top) over nav+CTA (bottom) */
 .navbar { display: flex; align-items: center; gap: 20px; padding-block: 18px; }
 .brand { flex: 0 0 auto; }
-.brand img { height: 66px; width: auto; }
+.brand img { height: 152px; width: auto; transition: .4s; }
+.scrolled .brand img { height: 104px; width: auto; }
 
 .navbar__right { margin-left: auto; display: flex; flex-direction: column; align-items: flex-end; gap: 14px; }
 
