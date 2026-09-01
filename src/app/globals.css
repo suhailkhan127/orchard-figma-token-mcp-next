@@ -258,6 +258,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   text-align: center; color: #fff; padding: calc(var(--header-h) + 40px) 0 80px;
   overflow: hidden; background: var(--c01);
 }
+@media (max-width: 1440px) { .hero { min-height: 750px; } }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
 .hero__bg img, .hero__bg video { width: 100%; height: 100%; object-fit: cover; }
 .hero::after { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, rgba(37,67,92,.72), rgba(37,67,92,.82)); }
@@ -364,7 +365,8 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .navbar { flex-wrap: wrap; padding-block: 0; justify-content: space-between; align-items: center; }
   .navbar__right { display: block; width: 100%; order: -1; margin: 0; }
   .site-header.scrolled .navbar__right { display: none; }
-  .navbar__utility { justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,.14); }
+  .navbar__utility { justify-content: space-between; gap: 12px; padding: 12px 24px; margin-inline: -24px; background: var(--c01); border-bottom: 1px solid rgba(255,255,255,.14); }
+  .navbar__utility a, .navbar__utility button { font-size: 12px; }
   .navbar__utility > :nth-child(n+3) { display: none; }
   .navbar__bottom { display: none; }
   .navbar__phone-m { display: inline-flex; margin-left: auto; margin-right: 0px; }
@@ -372,13 +374,16 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .burger { display: flex; }
   .burger span { background: var(--c03); }
   .brand { padding-block: 0px; }
-  .brand img { height: 70px; }
+  .brand img, .scrolled .brand img { height: 70px; }
   .visit__grid { grid-template-columns: 1fr; gap: 40px; }
   .section { padding-block: 72px; }
   /* reset desktop-only overlap margins so sections stack cleanly on mobile */
   .awards__head { margin: 0 auto 40px; }
+  .awards__badge { margin: 0 auto 24px; }
   .vtest { margin-top: 0; }
   .awards { padding: 64px 0; }
+  .home_map { padding-top: 72px; margin-top: 0; }
+  .docs { padding-bottom: 72px; margin-bottom: 0; }
 }
 @media (max-width: 768px) {
   .hero { min-height: 560px; }
@@ -434,6 +439,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .awards .container { /* position: absolute; */ z-index: 2; /* bottom: -100px; */ }
 .awards__head { text-align: center; max-width: 640px; margin: -640px auto 120px; }
 .awards__badge { width: auto; margin: 0 auto 24px; display: block; }
+@media (max-width: 1440px) { .awards__badge { margin: 180px auto 24px; } }
 .awards__head h2 { color: #fff; margin-bottom: 16px; }
 .awards__head p { color: rgba(255,255,255,.8); margin-bottom: 28px; }
 
@@ -540,11 +546,12 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
   .why { min-height: auto; display: block; }
   .why__grid .whyitem { width: calc(50% - 16px); }
   .treat__grid, .pricing__grid, .docs__grid, .cta__card { grid-template-columns: 1fr; }
+  .cta__card { padding: 40px 24px; }
   .docs__grid { flex-direction: column; }
   .docs__body, .docs__media { max-width: 100%; width: 100%; }
   .whyitem--down { transform: none; }
   .pros { margin: -20px 0; }
-  .pros__inner { border-radius: 0; }
+  .pros__inner { border-radius: 0; width: 100%; }
   .pros__img::before { border-radius: 0; }
   .pros__txt { padding: 290px 0 64px; max-width: 360px; }
   .vtest, .cta__body { padding: 40px 20px; }
@@ -642,7 +649,7 @@ p { font-size: 16px; font-weight: 500; line-height: 1.5; color: var(--ct); }
 .vtest__grid.is-slider > *, .reels__grid.is-slider > * { width: calc(25% - 18px); }
 .cards--2.is-slider > * { width: calc(50% - 12px); }
 @media (max-width: 900px) { .is-slider > * { width: calc(58% - 12px) !important; } }
-@media (max-width: 560px) { .is-slider > * { width: 84% !important; } }
+@media (max-width: 640px) { .is-slider > * { width: 84% !important; } }
 
 /* ==========================================================================
    Video lightbox (popup) — opened by any .playbtn
